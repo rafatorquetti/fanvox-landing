@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* sanity background */
+html,
+body {
+  background-color: #0b0620;
+  color: white;
+}
