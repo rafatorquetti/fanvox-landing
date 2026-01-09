@@ -1,115 +1,86 @@
-import Link from "next/link";
-
 export default function Footer() {
-  return (
-    <footer className="mt-32 border-t border-white/10">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
-          {/* Brand */}
-          <div>
-            <div className="mb-4 text-lg font-semibold">Fanvox</div>
-            <p className="text-sm text-white/60">
-              A trusted platform for fans to connect directly with creators
-              through personalized requests.
+    return (
+      <footer className="border-t border-white/10 bg-black/40 backdrop-blur">
+        <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-4">
+  
+          {/* ================= BRAND ================= */}
+          <div className="space-y-4">
+            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600" />
+            <p className="text-sm text-gray-400 max-w-xs">
+              Fanvox is a marketplace for personalized creator interactions —
+              built for fans and creators alike.
             </p>
           </div>
-
-          {/* Product */}
+  
+          {/* ================= PRODUCT ================= */}
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/80">
+            <h4 className="text-sm font-semibold mb-4 text-white">
               Product
             </h4>
-            <ul className="space-y-3 text-sm text-white/60">
-              <li>
-                <Link href="/creators" className="hover:text-white">
-                  Explore creators
-                </Link>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li className="hover:text-white cursor-pointer">
+                Browse creators
               </li>
-              <li>
-                <span className="hover:text-white cursor-pointer">
-                  How it works
-                </span>
+              <li className="hover:text-white cursor-pointer">
+                For fans
               </li>
-              <li>
-                <span className="hover:text-white cursor-pointer">
-                  Pricing
-                </span>
+              <li className="hover:text-white cursor-pointer">
+                For creators
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                Pricing
               </li>
             </ul>
           </div>
-
-          {/* Creators */}
+  
+          {/* ================= COMPANY ================= */}
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/80">
-              Creators
-            </h4>
-            <ul className="space-y-3 text-sm text-white/60">
-              <li>
-                <span className="hover:text-white cursor-pointer">
-                  Become a creator
-                </span>
-              </li>
-              <li>
-                <span className="hover:text-white cursor-pointer">
-                  Creator guidelines
-                </span>
-              </li>
-              <li>
-                <span className="hover:text-white cursor-pointer">
-                  Safety & trust
-                </span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white/80">
+            <h4 className="text-sm font-semibold mb-4 text-white">
               Company
             </h4>
-            <ul className="space-y-3 text-sm text-white/60">
-              <li>
-                <span className="hover:text-white cursor-pointer">
-                  About
-                </span>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li className="hover:text-white cursor-pointer">
+                About
               </li>
-              <li>
-                <span className="hover:text-white cursor-pointer">
-                  Privacy
-                </span>
+              <li className="hover:text-white cursor-pointer">
+                Careers
               </li>
-              <li>
-                <span className="hover:text-white cursor-pointer">
-                  Terms
-                </span>
+              <li className="hover:text-white cursor-pointer">
+                Press
               </li>
-              <li>
-                <span className="hover:text-white cursor-pointer">
-                  Contact
-                </span>
+              <li className="hover:text-white cursor-pointer">
+                Contact
+              </li>
+            </ul>
+          </div>
+  
+          {/* ================= LEGAL ================= */}
+          <div>
+            <h4 className="text-sm font-semibold mb-4 text-white">
+              Legal
+            </h4>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li className="hover:text-white cursor-pointer">
+                Terms of Service
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                Privacy Policy
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                Cookie Policy
+              </li>
+              <li className="hover:text-white cursor-pointer">
+                Transparency
               </li>
             </ul>
           </div>
         </div>
-
-        {/* Bottom bar */}
-        <div className="mt-16 flex flex-col items-start justify-between gap-6 border-t border-white/10 pt-8 md:flex-row md:items-center">
-          <p className="text-xs text-white/40">
-            © {new Date().getFullYear()} Fanvox. All rights reserved.
-          </p>
-
-          <div className="flex items-center gap-4 text-xs text-white/60">
-            <span>Language:</span>
-            <button className="hover:text-white">English</button>
-            <span>·</span>
-            <button className="hover:text-white">Español</button>
-            <span>·</span>
-            <button className="hover:text-white">Português</button>
-          </div>
+  
+        {/* ================= COPYRIGHT ================= */}
+        <div className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
+          © {new Date().getFullYear()} Fanvox, Inc. All rights reserved.
         </div>
-      </div>
-    </footer>
-  );
-}
-
+      </footer>
+    );
+  }
   
