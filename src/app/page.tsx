@@ -1,6 +1,8 @@
 import Button from "@/components/Button";
 import CreatorCard from "@/components/CreatorCard";
 import { creators } from "@/lib/creators";
+import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -13,45 +15,54 @@ export default function HomePage() {
           <div className="relative h-11 w-11 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600 shadow-lg" />
 
           <h1 className="relative max-w-4xl text-6xl md:text-7xl font-bold tracking-tight leading-[1.05]">
-            Where fans connect
+            Get personal access
             <br />
             <span className="bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent">
-              directly
-            </span>{" "}
-            with creators.
+              to your favorite creators
+            </span>
           </h1>
 
           <p className="relative max-w-2xl text-xl md:text-2xl text-gray-300">
-            Request personalized videos, 1:1 calls, shoutouts, and real interactions
-            from creators you love — all in one place.
+            Request personalized videos, private calls, shoutouts, or advice —
+            delivered directly by verified creators.
           </p>
 
-          <div className="relative flex flex-wrap items-center gap-6 pt-6">
-            <Button href="/creators">Explore creators</Button>
-            <span className="text-purple-400 cursor-pointer hover:underline">
-              I’m a creator →
-            </span>
+          {/* PRIMARY CTA */}
+          <div className="relative flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-6">
+            <Button href="/creators">
+              Explore creators
+            </Button>
+
+            {/* SECONDARY CTA */}
+            <Link
+              href="/dashboard"
+              className="text-sm text-gray-400 hover:text-purple-400 transition"
+            >
+              Are you a creator? <span className="underline">Get paid for requests</span>
+            </Link>
           </div>
 
           <p className="relative text-sm text-gray-400">
-            Secure payments • Verified creators • No subscription required
+            No subscriptions • Secure payments • Money-back protection
           </p>
         </section>
 
-        {/* ================= EXPLORE ================= */}
+        {/* ================= SOCIAL PROOF ================= */}
         <section className="space-y-12">
           <h2 className="text-4xl font-bold">
-            Explore creators. Discover what’s possible.
+            Fans are already connecting
           </h2>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {creators.map((creator) => (
+            {creators.slice(0, 6).map((creator) => (
               <CreatorCard key={creator.slug} creator={creator} />
             ))}
           </div>
 
           <div className="text-center pt-6">
-            <Button>Show more creators</Button>
+            <Button href="/creators">
+              Browse all creators
+            </Button>
           </div>
         </section>
 
@@ -60,26 +71,26 @@ export default function HomePage() {
           <div className="space-y-4">
             <h2 className="text-4xl font-bold">How it works</h2>
             <p className="max-w-2xl text-lg text-gray-300">
-              A simple, secure way to connect with creators — no subscriptions, no surprises.
+              A simple, risk-free way to connect — you only pay when creators deliver.
             </p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-3">
             {[
               {
-                step: "STEP 1",
+                step: "1",
                 title: "Choose a creator",
-                text: "Browse verified creators across categories and find the perfect match.",
+                text: "Browse verified creators by category, language, or expertise.",
               },
               {
-                step: "STEP 2",
+                step: "2",
                 title: "Send your request",
                 text: "Tell them exactly what you want — video, call, shoutout, or advice.",
               },
               {
-                step: "STEP 3",
-                title: "Get a response",
-                text: "The creator delivers — or your payment is protected.",
+                step: "3",
+                title: "Get your response",
+                text: "Creators deliver personally — or your payment is refunded.",
               },
             ].map((item) => (
               <div
@@ -87,7 +98,7 @@ export default function HomePage() {
                 className="rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-8"
               >
                 <span className="text-sm font-semibold text-purple-400">
-                  {item.step}
+                  STEP {item.step}
                 </span>
                 <h3 className="mt-4 text-2xl font-semibold">{item.title}</h3>
                 <p className="mt-3 text-gray-300">{item.text}</p>
@@ -96,116 +107,33 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ================= TRUST BLOCK ================= */}
-        <section className="space-y-12">
-          <div className="max-w-2xl space-y-4">
-            <h2 className="text-4xl font-bold">Built on trust</h2>
-            <p className="text-lg text-gray-300">
-              Fanvox is designed to protect both fans and creators — every step of the way.
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                title: "Verified creators",
-                text: "Every creator is reviewed and approved before joining Fanvox.",
-              },
-              {
-                title: "Secure payments",
-                text: "All transactions are encrypted and handled by trusted payment providers.",
-              },
-              {
-                title: "Delivery protection",
-                text: "If a creator doesn’t deliver, your payment is protected.",
-              },
-              {
-                title: "No subscriptions",
-                text: "Pay per request. No monthly fees. No lock-ins.",
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 p-8"
-              >
-                <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-300 text-sm">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* ================= FINAL CTA ================= */}
         <section className="rounded-3xl bg-gradient-to-br from-purple-600/20 to-violet-600/10 border border-white/10 p-16 text-center space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold">
-            Ready to connect with a creator?
+            One request. One creator. One real connection.
           </h2>
 
           <p className="max-w-2xl mx-auto text-lg text-gray-300">
-            Browse creators, send a request, and get a personalized response —
-            all without subscriptions or commitments.
+            Skip subscriptions and generic content.
+            Get something made just for you.
           </p>
 
-          <div className="pt-6">
-            <Button href="/creators">Explore creators</Button>
+          <div className="pt-6 flex flex-col items-center gap-4">
+            <Button href="/creators">
+              Explore creators
+            </Button>
+
+            <Link
+              href="/dashboard"
+              className="text-sm text-gray-400 hover:text-purple-400 transition"
+            >
+              I’m a creator — start earning
+            </Link>
           </div>
-
-          <p className="text-sm text-gray-400">
-            Pay per request • Secure checkout • Money-back protection
-          </p>
         </section>
       </main>
 
-      {/* ================= FOOTER ================= */}
-      <footer className="border-t border-white/10 bg-black/40 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-4">
-          {/* Brand */}
-          <div className="space-y-4">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-600" />
-            <p className="text-sm text-gray-400 max-w-xs">
-              Fanvox is a marketplace for personalized creator interactions —
-              built for fans and creators alike.
-            </p>
-          </div>
-
-          {/* Product */}
-          <div>
-            <h4 className="text-sm font-semibold mb-4">Product</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>Browse creators</li>
-              <li>For fans</li>
-              <li>For creators</li>
-              <li>Pricing</li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="text-sm font-semibold mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>About</li>
-              <li>Careers</li>
-              <li>Press</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-
-          {/* Legal */}
-          <div>
-            <h4 className="text-sm font-semibold mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>Terms of Service</li>
-              <li>Privacy Policy</li>
-              <li>Cookie Policy</li>
-              <li>Transparency</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="border-t border-white/10 py-6 text-center text-xs text-gray-500">
-          © {new Date().getFullYear()} Fanvox, Inc. All rights reserved.
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
