@@ -13,61 +13,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Fanvox — Personalized access to creators",
-    template: "%s · Fanvox",
-  },
+  title: "Fanvox — Personal access to creators",
   description:
-    "Fanvox lets fans request personalized videos, 1:1 calls, shoutouts, and advice from verified creators. Pay per request. No subscriptions.",
-
-  metadataBase: new URL("https://www.fanvox.co"),
-
-  openGraph: {
-    title: "Fanvox — Personalized access to creators",
-    description:
-      "Request videos, 1:1 calls, shoutouts, and advice from verified creators. Secure payments. No subscriptions.",
-    url: "https://www.fanvox.co",
-    siteName: "Fanvox",
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Fanvox — Personalized access to creators",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Fanvox — Personalized access to creators",
-    description:
-      "Request videos, calls, shoutouts, and advice from verified creators. Pay per request. No subscriptions.",
-    images: ["/og.png"],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  alternates: {
-    canonical: "https://www.fanvox.co",
-  },
+    "Request personalized videos, private calls, shoutouts, or advice from verified creators.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-black text-white antialiased`}
+        className={`
+          ${geistSans.variable} 
+          ${geistMono.variable}
+          relative min-h-screen overflow-x-hidden
+        `}
       >
+        {/* GLOBAL BACKGROUND */}
+        <div
+          aria-hidden
+          className="fixed inset-0 -z-10 bg-app-gradient"
+        />
+
         {children}
       </body>
     </html>
