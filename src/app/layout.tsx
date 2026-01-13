@@ -1,3 +1,4 @@
+// FORCE_FULL_REBUILD_2026_01_13
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
