@@ -2,13 +2,17 @@ import { creators } from "@/lib/creators";
 import Button from "@/components/Button";
 import { notFound } from "next/navigation";
 
-export default function CreatorProfilePage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+type PageProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
+export default async function CreatorProfilePage({ params }: PageProps) {
+  const { slug } = await params;
+
   const creator = creators.find(
-    (c) => c.slug === params.slug
+    (c) => c.slug === slug
   );
 
   if (!creator) {
@@ -78,7 +82,7 @@ export default function CreatorProfilePage({
               Text response
             </h3>
             <p className="text-gray-300 text-sm">
-              Receive a personalized written reply to your question.
+              Receive a personalized written reply.
             </p>
             <Button href="/dashboard">
               Request text reply
