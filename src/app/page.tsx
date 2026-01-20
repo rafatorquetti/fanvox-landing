@@ -11,16 +11,15 @@ export default function HomePage() {
         {/* ================= HERO ================= */}
         <section className="space-y-10">
           <h1 className="max-w-4xl text-6xl md:text-7xl font-bold tracking-tight leading-[1.05]">
-            Get personal access.
+            Get personal access
             <br />
             <span className="text-purple-400">
-              to your favorite creators
+              to creators you admire
             </span>
           </h1>
 
           <p className="max-w-2xl text-xl md:text-2xl text-gray-300">
-            Request personalized videos, private calls, shoutouts, or advice —
-            delivered directly by verified creators.
+            Request personalized interactions — delivered directly by verified creators.
           </p>
 
           {/* PRIMARY CTA */}
@@ -34,8 +33,7 @@ export default function HomePage() {
               href="/dashboard"
               className="text-sm text-gray-400 hover:text-purple-400 transition"
             >
-              Are you a creator?{" "}
-              <span className="underline">Get paid for requests</span>
+              I’m a creator — <span className="underline">start earning</span>
             </Link>
           </div>
 
@@ -44,11 +42,18 @@ export default function HomePage() {
           </p>
         </section>
 
-        {/* ================= SOCIAL PROOF ================= */}
+        {/* ================= CREATOR DISCOVERY ================= */}
         <section className="space-y-12">
-          <h2 className="text-4xl font-bold">
-            Fans are already connecting
-          </h2>
+          {/* 👇 THIS IS THE NARRATIVE BRIDGE */}
+          <div className="space-y-3">
+            <h2 className="text-4xl font-bold">
+              Available creators
+            </h2>
+
+            <p className="max-w-2xl text-lg text-gray-300">
+              Real people. Verified profiles. Ready to respond to your request.
+            </p>
+          </div>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {creators.slice(0, 6).map((creator) => (
@@ -82,12 +87,12 @@ export default function HomePage() {
               {
                 step: "2",
                 title: "Send your request",
-                text: "Tell them exactly what you want — video, call, shoutout, or advice.",
+                text: "Ask for a video, call, or message — exactly how you want it.",
               },
               {
                 step: "3",
-                title: "Get your response",
-                text: "Creators deliver personally — or your payment is refunded.",
+                title: "Get a real response",
+                text: "Creators deliver personally, or your payment is refunded.",
               },
             ].map((item) => (
               <div
@@ -138,4 +143,3 @@ export default function HomePage() {
     </div>
   );
 }
-

@@ -1,67 +1,39 @@
-import Button from "@/components/Button";
 import CreatorCard from "@/components/CreatorCard";
+import Footer from "@/components/Footer";
 import { creators } from "@/lib/creators";
+import Link from "next/link";
 
-export default function HomePage() {
+export default function CreatorsPage() {
   return (
-    <main style={{ maxWidth: 1280, margin: "0 auto", padding: "48px 24px" }}>
-      {/* HERO */}
-      <section style={{ display: "grid", gap: 48, marginBottom: 96 }}>
-        <div>
-          <div
-            className="premium-gradient glow-effect"
-            style={{
-              width: 40,
-              height: 40,
-              borderRadius: 8,
-              marginBottom: 24,
-            }}
-          />
-
-          <h1 style={{ fontSize: 48, fontWeight: 700, marginBottom: 16 }}>
-            Where fans meet creators — directly.
+    <div className="flex flex-col min-h-screen">
+      <main className="flex-1 mx-auto max-w-7xl px-6 py-20 space-y-10">
+        <div className="space-y-3">
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+            Explore creators
           </h1>
-
-          <p style={{ fontSize: 20, color: "#D1D5DB", marginBottom: 32 }}>
-            Request personalized videos, 1:1 calls, shoutouts, and real interactions
-            from creators you love.
+          <p className="max-w-2xl text-lg text-gray-300">
+            Browse verified creators and request personalized interactions — video, calls, or written replies.
           </p>
-
-          <div style={{ display: "flex", gap: 16 }}>
-            <Button href="/creators">Explore creators</Button>
-            <a style={{ alignSelf: "center", color: "#A78BFA" }}>
-              I’m a creator →
-            </a>
+          <div className="text-sm text-gray-400">
+            Verified creators • Secure payments • Money-back protection
           </div>
-
-          <p style={{ marginTop: 16, fontSize: 14, color: "#9CA3AF" }}>
-            Secure payments • Verified creators • No subscription required
-          </p>
         </div>
-      </section>
 
-      {/* EXPLORE */}
-      <section>
-        <h2 style={{ fontSize: 36, fontWeight: 700, marginBottom: 24 }}>
-          Explore creators. Discover what’s possible.
-        </h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
-            gap: 24,
-          }}
-        >
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {creators.map((creator) => (
-            <CreatorCard key={creator.slug} creator={creator} />
+            <CreatorCard key={creator.slug} creator={creator as any} />
           ))}
         </div>
 
-        <div style={{ marginTop: 48, textAlign: "center" }}>
-          <Button>Show more creators</Button>
+        <div className="pt-8 text-sm text-gray-400">
+          Looking to offer services?{" "}
+          <Link href="/dashboard" className="text-purple-400 hover:underline">
+            I’m a creator
+          </Link>
         </div>
-      </section>
-    </main>
+      </main>
+
+      <Footer />
+    </div>
   );
 }
