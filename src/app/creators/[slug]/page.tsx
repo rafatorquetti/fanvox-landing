@@ -1,6 +1,7 @@
 import { creators } from "@/lib/creators";
 import Button from "@/components/Button";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 type PageProps = {
   params: Promise<{
@@ -24,10 +25,12 @@ export default async function CreatorProfilePage({ params }: PageProps) {
       {/* ================= HEADER ================= */}
       <section className="space-y-8">
         <div className="relative h-80 rounded-3xl overflow-hidden">
-          <img
+          <Image
             src={creator.cover}
             alt={creator.name}
-            className="h-full w-full object-cover scale-105"
+            fill
+            priority
+            className="object-cover scale-105"
           />
           <div className="absolute inset-0 bg-black/40" />
         </div>
