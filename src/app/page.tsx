@@ -3,6 +3,7 @@ import CreatorCard from "@/components/CreatorCard";
 import { creators } from "@/lib/creators";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import StickyAccessCTA from "@/components/StickyAccessCTA";
 
 export default function HomePage() {
   return (
@@ -142,7 +143,6 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );
