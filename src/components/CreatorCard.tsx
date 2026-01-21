@@ -15,8 +15,14 @@ export default function CreatorCard({ creator }: { creator: Creator }) {
         transition-all duration-300 ease-out
         hover:-translate-y-2
         hover:shadow-2xl
-        hover:ring-1 hover:ring-purple-400/30
+        hover:ring-1 hover:ring-white/15
+
+        focus:outline-none
+        focus-visible:ring-2
+        focus-visible:ring-purple-400/40
+
         active:translate-y-0
+        active:ring-2 active:ring-purple-400/60
       "
     >
       {/* COVER IMAGE */}
@@ -36,7 +42,7 @@ export default function CreatorCard({ creator }: { creator: Creator }) {
 
       {/* CONTENT */}
       <div className="relative px-6 pb-6 pt-24">
-        {/* AVATAR — PRIMARY HOOK */}
+        {/* AVATAR */}
         <div
           className="
             absolute -top-16 left-6
@@ -76,7 +82,7 @@ export default function CreatorCard({ creator }: { creator: Creator }) {
           {creator.category}
         </span>
 
-        {/* SHORT DESCRIPTION */}
+        {/* DESCRIPTION */}
         <p className="mt-4 text-sm text-gray-300 leading-relaxed">
           {creator.shortDescription}
         </p>

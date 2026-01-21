@@ -7,44 +7,44 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-1 mx-auto max-w-7xl px-6 py-40 space-y-44">
+      <main className="flex-1 mx-auto max-w-7xl px-6">
         {/* ================= HERO ================= */}
-        <section className="space-y-12">
-          <h1 className="max-w-4xl text-6xl md:text-7xl font-bold tracking-tight leading-[1.05]">
-            Get personal access
-            <br />
-            <span className="text-purple-400">
-              to creators you admire
-            </span>
-          </h1>
+        <section className="min-h-screen flex items-center">
+          <div className="w-full max-w-5xl pt-20 pb-32 space-y-12">
+            <h1 className="text-6xl md:text-7xl font-bold tracking-tight leading-[1.05]">
+              Get personal access
+              <br />
+              <span className="text-purple-400">
+                to creators you admire
+              </span>
+            </h1>
 
-          <p className="max-w-2xl text-xl md:text-2xl text-gray-300">
-            Request personalized interactions — delivered directly by verified creators.
-          </p>
+            <p className="max-w-2xl text-xl md:text-2xl text-gray-300">
+              Request personalized interactions — delivered directly by verified creators.
+            </p>
 
-          {/* PRIMARY CTA */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 pt-8">
-            <Button href="/creators">
-              Explore creators
-            </Button>
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 pt-6">
+              <Button href="/creators">
+                Explore creators
+              </Button>
 
-            {/* SECONDARY CTA */}
-            <Link
-              href="/dashboard"
-              className="text-sm text-gray-400 hover:text-purple-400 transition"
-            >
-              I’m a creator — <span className="underline">start earning</span>
-            </Link>
+              <Link
+                href="/dashboard"
+                className="text-sm text-gray-400 hover:text-purple-400 transition"
+              >
+                I’m a creator — <span className="underline">start earning</span>
+              </Link>
+            </div>
+
+            <p className="pt-2 text-sm text-gray-400">
+              No subscriptions • Secure payments • Money-back protection
+            </p>
           </div>
-
-          <p className="pt-4 text-sm text-gray-400">
-            No subscriptions • Secure payments • Money-back protection
-          </p>
         </section>
 
         {/* ================= CREATOR DISCOVERY ================= */}
-        <section className="space-y-20">
-          {/* NARRATIVE BRIDGE */}
+        <section className="py-40 space-y-20">
           <div className="space-y-4">
             <h2 className="text-4xl font-bold">
               Available creators
@@ -69,7 +69,7 @@ export default function HomePage() {
         </section>
 
         {/* ================= HOW IT WORKS ================= */}
-        <section className="space-y-24">
+        <section className="py-40 space-y-24">
           <div className="space-y-5">
             <h2 className="text-4xl font-bold">
               How it works
@@ -99,12 +99,7 @@ export default function HomePage() {
             ].map((item) => (
               <div
                 key={item.step}
-                className="
-                  rounded-2xl
-                  bg-black/40 backdrop-blur-xl
-                  border border-white/10
-                  p-10
-                "
+                className="rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 p-10"
               >
                 <span className="text-sm font-semibold text-purple-400">
                   STEP {item.step}
@@ -121,35 +116,29 @@ export default function HomePage() {
         </section>
 
         {/* ================= FINAL CTA ================= */}
-        <section className="
-          rounded-3xl
-          bg-black/40
-          border border-white/10
-          backdrop-blur-xl
-          p-20
-          text-center
-          space-y-8
-        ">
-          <h2 className="text-4xl md:text-5xl font-bold">
-            One request. One creator. One real connection.
-          </h2>
+        <section className="py-40">
+          <div className="rounded-3xl bg-black/40 border border-white/10 backdrop-blur-xl p-20 text-center space-y-8">
+            <h2 className="text-4xl md:text-5xl font-bold">
+              One request. One creator. One real connection.
+            </h2>
 
-          <p className="max-w-2xl mx-auto text-lg text-gray-300">
-            Skip subscriptions and generic content.
-            Get something made just for you.
-          </p>
+            <p className="max-w-2xl mx-auto text-lg text-gray-300">
+              Skip subscriptions and generic content.
+              Get something made just for you.
+            </p>
 
-          <div className="pt-8 flex flex-col items-center gap-5">
-            <Button href="/creators">
-              Explore creators
-            </Button>
+            <div className="pt-8 flex flex-col items-center gap-5">
+              <Button href="/creators">
+                Explore creators
+              </Button>
 
-            <Link
-              href="/dashboard"
-              className="text-sm text-gray-400 hover:text-purple-400 transition"
-            >
-              I’m a creator — start earning
-            </Link>
+              <Link
+                href="/dashboard"
+                className="text-sm text-gray-400 hover:text-purple-400 transition"
+              >
+                I’m a creator — start earning
+              </Link>
+            </div>
           </div>
         </section>
       </main>
