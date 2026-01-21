@@ -7,15 +7,15 @@ export default function CreatorCard({ creator }: { creator: Creator }) {
     <Link
       href={`/creators/${creator.slug}`}
       className="
-        group relative cursor-pointer
+        group relative block cursor-pointer
         overflow-hidden rounded-3xl
         border border-white/10
         bg-black/40 backdrop-blur-xl
 
         transition-all duration-300 ease-out
-        hover:-translate-y-[6px]
-        hover:border-white/20
-        hover:shadow-[0_20px_40px_rgba(0,0,0,0.35)]
+        hover:-translate-y-2
+        hover:shadow-2xl
+        hover:ring-1 hover:ring-purple-400/30
         active:translate-y-0
       "
     >
@@ -35,7 +35,7 @@ export default function CreatorCard({ creator }: { creator: Creator }) {
       </div>
 
       {/* CONTENT */}
-      <div className="relative px-6 pb-6 pt-20">
+      <div className="relative px-6 pb-6 pt-24">
         {/* AVATAR — PRIMARY HOOK */}
         <div
           className="

@@ -7,9 +7,9 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-1 mx-auto max-w-7xl px-6 py-28 space-y-36">
+      <main className="flex-1 mx-auto max-w-7xl px-6 py-40 space-y-44">
         {/* ================= HERO ================= */}
-        <section className="space-y-10">
+        <section className="space-y-12">
           <h1 className="max-w-4xl text-6xl md:text-7xl font-bold tracking-tight leading-[1.05]">
             Get personal access
             <br />
@@ -23,7 +23,7 @@ export default function HomePage() {
           </p>
 
           {/* PRIMARY CTA */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 pt-8">
             <Button href="/creators">
               Explore creators
             </Button>
@@ -37,15 +37,15 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <p className="text-sm text-gray-400">
+          <p className="pt-4 text-sm text-gray-400">
             No subscriptions • Secure payments • Money-back protection
           </p>
         </section>
 
         {/* ================= CREATOR DISCOVERY ================= */}
-        <section className="space-y-12">
-          {/* 👇 THIS IS THE NARRATIVE BRIDGE */}
-          <div className="space-y-3">
+        <section className="space-y-20">
+          {/* NARRATIVE BRIDGE */}
+          <div className="space-y-4">
             <h2 className="text-4xl font-bold">
               Available creators
             </h2>
@@ -55,13 +55,13 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-10 xl:gap-12 sm:grid-cols-2 lg:grid-cols-3">
             {creators.slice(0, 6).map((creator) => (
               <CreatorCard key={creator.slug} creator={creator} />
             ))}
           </div>
 
-          <div className="text-center pt-6">
+          <div className="pt-10 text-center">
             <Button href="/creators">
               Browse all creators
             </Button>
@@ -69,15 +69,17 @@ export default function HomePage() {
         </section>
 
         {/* ================= HOW IT WORKS ================= */}
-        <section className="space-y-14">
-          <div className="space-y-4">
-            <h2 className="text-4xl font-bold">How it works</h2>
+        <section className="space-y-24">
+          <div className="space-y-5">
+            <h2 className="text-4xl font-bold">
+              How it works
+            </h2>
             <p className="max-w-2xl text-lg text-gray-300">
               A simple, risk-free way to connect — you only pay when creators deliver.
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-10 md:grid-cols-3">
             {[
               {
                 step: "1",
@@ -97,15 +99,20 @@ export default function HomePage() {
             ].map((item) => (
               <div
                 key={item.step}
-                className="rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 p-8"
+                className="
+                  rounded-2xl
+                  bg-black/40 backdrop-blur-xl
+                  border border-white/10
+                  p-10
+                "
               >
                 <span className="text-sm font-semibold text-purple-400">
                   STEP {item.step}
                 </span>
-                <h3 className="mt-4 text-2xl font-semibold">
+                <h3 className="mt-5 text-2xl font-semibold">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-gray-300">
+                <p className="mt-4 text-gray-300">
                   {item.text}
                 </p>
               </div>
@@ -114,7 +121,15 @@ export default function HomePage() {
         </section>
 
         {/* ================= FINAL CTA ================= */}
-        <section className="rounded-3xl bg-black/40 border border-white/10 backdrop-blur-xl p-16 text-center space-y-6">
+        <section className="
+          rounded-3xl
+          bg-black/40
+          border border-white/10
+          backdrop-blur-xl
+          p-20
+          text-center
+          space-y-8
+        ">
           <h2 className="text-4xl md:text-5xl font-bold">
             One request. One creator. One real connection.
           </h2>
@@ -124,7 +139,7 @@ export default function HomePage() {
             Get something made just for you.
           </p>
 
-          <div className="pt-6 flex flex-col items-center gap-4">
+          <div className="pt-8 flex flex-col items-center gap-5">
             <Button href="/creators">
               Explore creators
             </Button>

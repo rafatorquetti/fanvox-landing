@@ -1,22 +1,10 @@
-// FORCE_FULL_REBUILD_2026_01_13
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Fanvox — Personal access to creators",
+  title: "Fanvox — Personal access to creators you admire",
   description:
-    "Request personalized videos, private calls, shoutouts, or advice from verified creators.",
+    "Request personalized interactions delivered directly by verified creators.",
 };
 
 export default function RootLayout({
@@ -27,18 +15,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`
-          ${geistSans.variable} 
-          ${geistMono.variable}
-          relative min-h-screen overflow-x-hidden
-        `}
+        className="
+          min-h-screen
+          bg-gradient-to-br from-black via-[#0b0b1a] to-[#1a0b2e]
+          text-white
+          antialiased
+          overflow-x-hidden
+        "
       >
-        {/* GLOBAL BACKGROUND */}
-        <div
-          aria-hidden
-          className="fixed inset-0 -z-10 bg-app-gradient"
-        />
-
         {children}
       </body>
     </html>
