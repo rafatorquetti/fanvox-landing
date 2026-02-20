@@ -17,7 +17,7 @@ export default function Button({ href, children }: ButtonProps) {
 
         bg-indigo-600 text-white
 
-        transition-colors transition-shadow duration-200 ease-out
+        transition-all duration-200 ease-out
 
         hover:bg-indigo-500
         hover:text-indigo-50

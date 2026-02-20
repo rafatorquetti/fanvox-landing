@@ -2,104 +2,79 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mt-32 border-t border-white/10 bg-black/40 backdrop-blur-xl">
-      <div className="mx-auto max-w-7xl px-6 py-16 grid gap-12 md:grid-cols-4">
-        {/* BRAND */}
-        <div className="space-y-4">
-          <p className="text-sm text-gray-400 max-w-xs">
-            Fanvox is a platform for requesting personalized interactions
-            directly from verified creators.
-          </p>
-        </div>
+    <footer className="relative mt-32 bg-black border-t border-white/5">
 
-        {/* PRODUCT */}
-        <div className="space-y-3">
-          <h4 className="text-sm font-semibold text-white">
-            Product
-          </h4>
-          <ul className="space-y-2 text-sm text-gray-400">
-            <li>
-              <Link
-                href="/creators"
-                className="hover:text-purple-400 transition"
-              >
+      {/* Main Footer Content */}
+      <div className="mx-auto w-full max-w-6xl px-6 py-20">
+
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
+
+          {/* Left Description */}
+          <div className="md:col-span-1">
+            <p className="text-gray-400 leading-relaxed max-w-xs">
+              Fanvox is a platform for requesting personalized interactions
+              directly from verified creators.
+            </p>
+          </div>
+
+          {/* Product */}
+          <div>
+            <h4 className="text-white font-semibold mb-6">
+              Product
+            </h4>
+            <div className="space-y-3 text-gray-400">
+              <Link href="/creators" className="block hover:text-white transition">
                 Explore creators
               </Link>
-            </li>
-            <li>
-              <Link
-                href="/dashboard"
-                className="hover:text-purple-400 transition"
-              >
+              <Link href="/for-creators" className="block hover:text-white transition">
                 For creators
               </Link>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </div>
 
-        {/* COMPANY */}
-        <div className="space-y-3">
-          <h4 className="text-sm font-semibold text-white">
-            Company
-          </h4>
-          <ul className="space-y-2 text-sm text-gray-400">
-            <li>
-              <Link
-                href="/about"
-                className="hover:text-purple-400 transition"
-              >
+          {/* Company */}
+          <div>
+            <h4 className="text-white font-semibold mb-6">
+              Company
+            </h4>
+            <div className="space-y-3 text-gray-400">
+              <Link href="/about" className="block hover:text-white transition">
                 About
               </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="hover:text-purple-400 transition"
-              >
+              <Link href="/contact" className="block hover:text-white transition">
                 Contact
               </Link>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </div>
 
-        {/* LEGAL */}
-        <div className="space-y-3">
-          <h4 className="text-sm font-semibold text-white">
-            Legal
-          </h4>
-          <ul className="space-y-2 text-sm text-gray-400">
-            <li>
-              <Link
-                href="/terms"
-                className="hover:text-purple-400 transition"
-              >
+          {/* Legal */}
+          <div>
+            <h4 className="text-white font-semibold mb-6">
+              Legal
+            </h4>
+            <div className="space-y-3 text-gray-400">
+              <Link href="/terms" className="block hover:text-white transition">
                 Terms of Service
               </Link>
-            </li>
-            <li>
-              <Link
-                href="/privacy"
-                className="hover:text-purple-400 transition"
-              >
+              <Link href="/privacy" className="block hover:text-white transition">
                 Privacy Policy
               </Link>
-            </li>
-            <li>
-              <Link
-                href="/cookies"
-                className="hover:text-purple-400 transition"
-              >
+              <Link href="/cookies" className="block hover:text-white transition">
                 Cookie Policy
               </Link>
-            </li>
-          </ul>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      {/* BOTTOM BAR */}
-      <div className="border-t border-white/10 py-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Fanvox. All rights reserved.
+      {/* Bottom Bar */}
+      <div className="border-t border-white/5">
+        <div className="mx-auto w-full max-w-6xl px-6 py-6 text-center text-sm text-gray-500">
+          © 2026 Fanvox. All rights reserved.
+        </div>
       </div>
+
     </footer>
   );
 }

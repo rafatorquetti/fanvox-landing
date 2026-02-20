@@ -1,104 +1,82 @@
+"use client";
+
 import Link from "next/link";
-import Image from "next/image";
-import { Creator } from "@/lib/creators";
+import type { Creator } from "@/lib/creators";
 
-export default function CreatorCard({ creator }: { creator: Creator }) {
+export default function CreatorCard({
+  creator,
+  locale,
+}: {
+  creator: Creator;
+  locale: string;
+}) {
   return (
-    <Link
-      href={`/creators/${creator.slug}`}
-      className="
-        group relative block cursor-pointer
-        overflow-hidden rounded-3xl
-        border border-white/10
-        bg-black/40 backdrop-blur-xl
+    <Link href={`/${locale}/creators/${creator.slug}`} className="block">
+      <div className="group relative overflow-hidden rounded-3xl border border-white/5 bg-[#070B14] hover:border-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
 
-        transition-all duration-300 ease-out
-        hover:-translate-y-2
-        hover:shadow-2xl
-        hover:ring-1 hover:ring-white/15
-
-        focus:outline-none
-        focus-visible:ring-2
-        focus-visible:ring-purple-400/40
-
-        active:translate-y-0
-        active:ring-2 active:ring-purple-400/60
-      "
-    >
-      {/* COVER IMAGE */}
-      <div className="relative h-52 w-full overflow-hidden">
-        <Image
-          src={creator.cover}
-          alt={`${creator.name} cover`}
-          fill
-          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-          className="
-            object-cover
-            transition-transform duration-[900ms] ease-out
-            group-hover:scale-[1.08]
-          "
-        />
-      </div>
-
-      {/* CONTENT */}
-      <div className="relative px-6 pb-6 pt-24">
-        {/* AVATAR */}
-        <div
-          className="
-            absolute -top-16 left-6
-            h-36 w-36
-            rounded-full overflow-hidden
-            border-[5px] border-purple-400
-            bg-black
-
-            transition-transform duration-300 ease-out
-            group-hover:scale-[1.04]
-          "
-        >
-          <Image
-            src={creator.avatar}
+        {/* COVER IMAGE (bulletproof) */}
+        <div className="relative h-40 w-full overflow-hidden bg-gradient-to-br from-[#0B0F25] to-[#121A3A]">
+          <img
+            src={creator.cover || "/fallbacks/creator-cover.jpg"}
             alt={creator.name}
-            width={144}
-            height={144}
-            className="object-cover"
+            className="h-full w-full object-cover group-hover:scale-105 transition duration-500"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).src =
+                "/fallbacks/creator-cover.jpg";
+            }}
           />
-        </div>
-
-        {/* NAME + VERIFIED */}
-        <div className="flex items-center gap-2">
-          <h3 className="text-2xl font-semibold text-white">
-            {creator.name}
-          </h3>
 
           {creator.verified && (
-            <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-blue-500 text-white text-xs font-bold">
-              ✓
-            </span>
+            <div className="absolute top-3 right-3 bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-medium shadow-md">
+              ✓ Verified
+            </div>
           )}
         </div>
 
-        {/* CATEGORY */}
-        <span className="mt-3 inline-block rounded-full border border-purple-400/40 px-3 py-1 text-xs text-purple-300">
-          {creator.category}
-        </span>
+        {/* CARD BODY */}
+        <div className="relative px-5 pb-5 pt-14">
 
-        {/* DESCRIPTION */}
-        <p className="mt-4 text-sm text-gray-300 leading-relaxed">
-          {creator.shortDescription}
-        </p>
+          {/* AVATAR */}
+          <div className="absolute -top-10 left-5">
+            <div className="relative">
+              <img
+                src={creator.avatar || "/fallbacks/avatar.jpg"}
+                alt={creator.name}
+                className="h-20 w-20 rounded-full object-cover border-4 border-[#070B14]"
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = "/fallbacks/avatar.jpg";
+                }}
+              />
 
-        {/* STATS */}
-        <div className="mt-6 flex items-center justify-between text-sm text-gray-400">
-          <span className="flex items-center gap-1 text-yellow-400">
-            ⭐ {creator.rating}
-            <span className="text-gray-500">
-              ({creator.reviews})
+              {creator.trending && (
+                <div className="absolute -bottom-1 -right-1 h-7 w-7 rounded-full bg-orange-500 border-2 border-black flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                  ↗
+                </div>
+              )}
+            </div>
+          </div>
+
+          <h3 className="text-lg font-semibold text-white">{creator.name}</h3>
+
+          <div className="mt-1 mb-3">
+            <span className="text-xs px-3 py-1 rounded-full border border-purple-400/40 text-purple-300">
+              {creator.category}
             </span>
-          </span>
+          </div>
 
-          <span>
-            {creator.requests}+ requests completed
-          </span>
+          <p className="text-sm text-gray-400 line-clamp-2">{creator.description}</p>
+
+          <div className="flex items-center justify-between mt-4 text-sm">
+            <div className="text-yellow-400">
+              ★ {creator.rating}
+              <span className="text-gray-500 ml-1">({creator.reviews})</span>
+            </div>
+            <div className="text-gray-400">{creator.interactions} sessions</div>
+          </div>
+
+          <div className="mt-2 text-xs text-gray-500">
+            Responds in {creator.responseTime} • {creator.availability}
+          </div>
         </div>
       </div>
     </Link>

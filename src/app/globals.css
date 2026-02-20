@@ -4,5 +4,55 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: white;
+
+  background:
+    radial-gradient(
+      900px 600px at 85% -10%,
+      rgba(124, 58, 237, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      700px 500px at 10% 10%,
+      rgba(59, 130, 246, 0.12),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      #050713 0%,
+      #060915 40%,
+      #070a17 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,0.015) 0px,
+      rgba(255,255,255,0.015) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+
+  background-attachment: scroll;
+  overflow-x: hidden;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 28s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll 32s linear infinite reverse;
 }
