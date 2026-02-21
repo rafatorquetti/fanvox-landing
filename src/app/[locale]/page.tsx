@@ -26,7 +26,7 @@ export default async function Page({
             <h1 className="max-w-3xl text-4xl sm:text-5xl font-bold text-white leading-[1.05]">
               Access the people <br />
               <span className="text-purple-400">
-                shaping what's next.
+                shaping what&apos;s next
               </span>
             </h1>
 

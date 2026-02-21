@@ -139,7 +139,7 @@ export default function CreatorProfile() {
 
         <div className="grid md:grid-cols-3 gap-6">
 
-          {["Best advice I've ever paid for.",
+          {["Best advice I&#39;ve ever paid for.",
             "Worth every dollar.",
             "Incredible clarity in just 15 minutes."
           ].map((review,i)=>(

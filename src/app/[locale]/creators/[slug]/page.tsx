@@ -94,7 +94,7 @@ export default function CreatorProfilePage({ params }: PageProps) {
             {/* Extended curated bio */}
             <p className="text-gray-400 max-w-2xl leading-relaxed">
               Through Fanvox, you can request direct, personalized interaction —
-              tailored to your needs. Whether it's strategic advice, personal
+              tailored to your needs. Whether it&#39;s strategic advice, personal
               insight, performance feedback, or a meaningful message,
               this is your opportunity to connect intentionally.
             </p>
