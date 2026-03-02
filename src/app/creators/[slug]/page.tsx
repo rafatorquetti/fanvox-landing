@@ -5,7 +5,8 @@ export default function CreatorProfile() {
     <main className="min-h-screen bg-gradient-to-b from-[#020617] to-[#020617] text-white">
 
       {/* HERO */}
-      <section className="relative">
+      {/* ✅ added top padding to prevent navbar overlap */}
+      <section className="relative pt-24 sm:pt-28">
 
         {/* Cover */}
         <div className="h-[340px] w-full bg-gradient-to-r from-indigo-600/40 to-purple-600/40" />
@@ -13,7 +14,8 @@ export default function CreatorProfile() {
         {/* Profile Block */}
         <div className="max-w-6xl mx-auto px-6">
 
-          <div className="-mt-24 flex flex-col md:flex-row items-start md:items-end gap-6">
+          {/* ✅ slightly improved vertical balance */}
+          <div className="-mt-20 sm:-mt-24 flex flex-col md:flex-row items-start md:items-end gap-6">
 
             {/* Avatar */}
             <Image
@@ -41,17 +43,19 @@ export default function CreatorProfile() {
             </div>
 
             {/* CTA */}
-            <button className="
-              px-8
-              py-4
-              rounded-2xl
-              bg-gradient-to-r
-              from-purple-500
-              to-indigo-500
-              hover:scale-105
-              transition
-              shadow-xl
-            ">
+            <button
+              className="
+                px-8
+                py-4
+                rounded-2xl
+                bg-gradient-to-r
+                from-purple-500
+                to-indigo-500
+                hover:scale-105
+                transition
+                shadow-xl
+              "
+            >
               Book now
             </button>
 
@@ -70,10 +74,10 @@ export default function CreatorProfile() {
         <div className="grid md:grid-cols-3 gap-6">
 
           {[
-            {title:"Personalized Video",price:"$120"},
-            {title:"1:1 Call (15 min)",price:"$250"},
-            {title:"Startup Mentorship",price:"$900"},
-          ].map((offer)=>(
+            { title: "Personalized Video", price: "$120" },
+            { title: "1:1 Call (15 min)", price: "$250" },
+            { title: "Startup Mentorship", price: "$900" },
+          ].map((offer) => (
             <div
               key={offer.title}
               className="
@@ -94,17 +98,19 @@ export default function CreatorProfile() {
                 {offer.price}
               </p>
 
-              <button className="
-                mt-6
-                w-full
-                py-3
-                rounded-xl
-                bg-white
-                text-black
-                font-medium
-                hover:scale-[1.02]
-                transition
-              ">
+              <button
+                className="
+                  mt-6
+                  w-full
+                  py-3
+                  rounded-xl
+                  bg-white
+                  text-black
+                  font-medium
+                  hover:scale-[1.02]
+                  transition
+                "
+              >
                 Continue
               </button>
             </div>
@@ -139,10 +145,11 @@ export default function CreatorProfile() {
 
         <div className="grid md:grid-cols-3 gap-6">
 
-          {["Best advice I&#39;ve ever paid for.",
+          {[
+            "Best advice I&#39;ve ever paid for.",
             "Worth every dollar.",
-            "Incredible clarity in just 15 minutes."
-          ].map((review,i)=>(
+            "Incredible clarity in just 15 minutes.",
+          ].map((review, i) => (
             <div
               key={i}
               className="p-6 rounded-2xl bg-white/5 border border-white/10"

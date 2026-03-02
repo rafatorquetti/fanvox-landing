@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Props = {
   creatorName: string;
@@ -8,18 +8,31 @@ type Props = {
 
 export default function StickyAccessCTA({ creatorName }: Props) {
   const [visible, setVisible] = useState(false);
+  const [showBar, setShowBar] = useState(false);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      // show after slight scroll (mobile-friendly threshold)
-      if (window.scrollY > 80) {
+      const currentY = window.scrollY;
+
+      // ✅ appear only after meaningful scroll
+      if (currentY > 140) {
         setVisible(true);
       } else {
         setVisible(false);
       }
+
+      // ✅ hide on scroll down, show on scroll up
+      if (currentY > lastScrollY.current && currentY > 200) {
+        setShowBar(false);
+      } else {
+        setShowBar(true);
+      }
+
+      lastScrollY.current = currentY;
     };
 
-    handleScroll(); // run once
+    handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -29,7 +42,7 @@ export default function StickyAccessCTA({ creatorName }: Props) {
 
   return (
     <div
-      className="
+      className={`
         fixed
         bottom-[max(1rem,env(safe-area-inset-bottom))]
         left-1/2
@@ -37,15 +50,21 @@ export default function StickyAccessCTA({ creatorName }: Props) {
         w-[92%] sm:w-[94%]
         max-w-xl
         -translate-x-1/2
-      "
+        transition-all duration-300 ease-out
+        ${
+          showBar
+            ? "translate-y-0 opacity-100"
+            : "translate-y-6 opacity-0 pointer-events-none"
+        }
+      `}
     >
-      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black/80 backdrop-blur-xl px-4 sm:px-6 py-3.5 sm:py-5 shadow-2xl">
+      <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black/80 backdrop-blur-xl px-4 sm:px-6 py-3 sm:py-5 shadow-2xl">
         {/* subtle glow */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-purple-600/10 via-transparent to-indigo-600/10" />
 
         <div className="relative flex items-center justify-between gap-4">
           {/* LEFT — intent stack */}
-          <div className="space-y-1">
+          <div className="space-y-0.5">
             <p className="text-xs sm:text-sm text-gray-400">
               Get direct access to
             </p>
@@ -68,8 +87,8 @@ export default function StickyAccessCTA({ creatorName }: Props) {
               py-2.5 sm:py-3
               text-sm font-semibold text-white
               bg-gradient-to-r from-purple-600 to-indigo-600
-              shadow-[0_0_25px_rgba(124,58,237,0.35)]
-              hover:shadow-[0_0_40px_rgba(124,58,237,0.6)]
+              shadow-[0_0_18px_rgba(124,58,237,0.28)]
+              hover:shadow-[0_0_28px_rgba(124,58,237,0.45)]
               hover:scale-[1.03]
               active:scale-[0.97]
               transition-all duration-200
