@@ -1,0 +1,167 @@
+{
+    "Navbar": {
+      "explore": "Explore",
+      "howItWorks": "How it works",
+      "forCreators": "For creators",
+      "login": "Log in",
+      "getStarted": "Get started"
+    },
+  
+    "Home": {
+      "heroBadge": "The marketplace for meaningful access to exceptional people",
+      "heroTitle1": "Access the people",
+      "heroTitleHighlight": "shaping what's next",
+      "heroSubtitle": "Request personalized videos, calls, or messages — delivered directly by verified creators, on your terms.",
+  
+      "browseCreators": "Browse creators",
+      "creatorCta": "Are you a creator?",
+      "learnMore": "Learn more",
+  
+      "trustLine": "No subscriptions • Stripe Payments • Money-back protection",
+  
+      "selectLabel": "FANVOX SELECT",
+      "creatorsTitle": "Creators everyone is talking about",
+  
+      "closerTitle": "Closer than ever to the people who inspire you.",
+      "closerSubtitle": "No agents. No noise. No friction. Just direct access to the people you admire.",
+  
+      "stepsTitle": "Personal access in three simple steps",
+      "stepsSubtitle": "No subscriptions. No middlemen. Just direct, meaningful interaction.",
+  
+      "steps": {
+        "explore": {
+          "title": "Explore",
+          "description": "Discover athletes, founders, artists, and experts available for personalized interactions."
+        },
+        "request": {
+          "title": "Request",
+          "description": "Ask for a video, private call, mentorship session, or message — directly from the person."
+        },
+        "receive": {
+          "title": "Receive",
+          "description": "Receive your personalized experience with secure delivery."
+        }
+      },
+  
+      "trustedBy": "Trusted by world-class creators",
+  
+      "realTitle": "Real requests. Real moments.",
+      "realSubtitle": "Meaningful access happening right now.",
+  
+      "real": {
+        "card1": {
+          "title": "Birthday video delivered",
+          "subtitle": "Personalized message sent from London",
+          "time": "2 min ago"
+        },
+        "card2": {
+          "title": "Startup pitch reviewed",
+          "subtitle": "Founder received feedback from a VC",
+          "time": "just now"
+        },
+        "card3": {
+          "title": "Private strategy call completed",
+          "subtitle": "30-minute session with an elite operator",
+          "time": "9 min ago"
+        }
+      },
+  
+      "creatorRevenueTitle": "Turn your audience into a meaningful revenue stream.",
+      "creatorRevenueSubtitle": "Fans are already seeking meaningful access. Fanvox handles the requests, payments, and delivery — so you can focus on creating unforgettable experiences.",
+  
+      "creatorStats": {
+        "income": "Avg. monthly creator income",
+        "fulfillment": "Typical fulfillment time",
+        "revenueShare": "Creator revenue share",
+        "fans": "Fans ready to book you"
+      },
+  
+      "startEarning": "Start earning",
+      "noExclusivity": "No exclusivity • Set your own prices"
+    },
+  
+    "CreatorCard": {
+      "verified": "Verified",
+      "sessions": "sessions",
+      "respondsIn": "Responds in",
+      "available": "Available"
+    },
+  
+    "Creator": {
+      "extendedBio": "Through Fanvox, you can request direct, personalized interaction — tailored to your needs. Whether it's strategic advice, personal insight, performance feedback, or a meaningful message, this is your opportunity to connect with me.",
+  
+      "reviews": "reviews",
+      "completedRequests": "completed requests",
+      "avgResponse": "average response",
+  
+      "popularRequests": "Popular requests",
+      "reqVideo": "Personalized video message",
+      "reqCall": "30-minute private call",
+      "reqWritten": "5 written responses",
+  
+      "limitedAvailability": "Limited availability this week.",
+  
+      "categories": {
+        "Sports": "Sports",
+        "Business": "Business",
+        "Venture": "Venture",
+        "Science": "Science",
+        "Arts": "Arts",
+        "Finance": "Finance",
+        "Entertainment": "Entertainment",
+        "Media": "Media",
+        "Lifestyle": "Lifestyle",
+        "Leadership": "Leadership",
+        "Politics": "Politics",
+        "Education": "Education"
+      },
+  
+      "industry": {
+        "sports": {
+          "req1": "Performance breakdown session",
+          "req2": "Mindset & discipline strategy"
+        },
+  
+        "business": {
+          "req1": "Startup pitch feedback",
+          "req2": "Scaling strategy consultation"
+        },
+  
+        "venture": {
+          "req1": "Fundraising feedback",
+          "req2": "Investor mindset session"
+        },
+  
+        "science": {
+          "req1": "Research insight discussion",
+          "req2": "Industry career advice"
+        },
+  
+        "arts": {
+          "req1": "Creative portfolio review",
+          "req2": "Storytelling feedback"
+        },
+  
+        "default": {
+          "req1": "Personalized written response",
+          "req2": "Custom advisory session"
+        }
+      },
+  
+      "descriptions": {
+        "marcus-johnson": "Former NBA champion mentoring elite performance.",
+        "elena-kovacs": "Olympic swimmer teaching mental toughness.",
+        "tyrell-brooks": "Former NFL receiver coaching speed and separation.",
+        "isabella-rocha": "Fight-performance coach building discipline and grit.",
+        "chen-hao": "Table tennis legend teaching precision and focus.",
+        "keisha-morgan": "Sprint coach developing explosive starts.",
+        "javier-ruiz": "Boxing trainer refining timing and power.",
+        "priya-desai": "Sports psychologist building pressure-proof confidence.",
+        "luca-bianchi": "Pro cycling coach building endurance and race strategy.",
+        "oliver-grant": "IPO architect mentoring CEOs and boards.",
+        "darius-cole": "Fortune 500 executive coaching elite teams.",
+        "mei-tan": "Product leader specializing in hyper-growth.",
+        "gabriel-costa": "Operator helping founders scale operations."
+      }
+    }
+  }

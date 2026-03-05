@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function Navbar() {
   const params = useParams();
   const locale = (params?.locale as string) || "en";
+  const t = useTranslations("Navbar");
 
   return (
     <div className="fixed top-4 md:top-6 left-0 right-0 z-50 flex justify-center px-4 sm:px-6">
@@ -44,21 +46,21 @@ export default function Navbar() {
             href={`/${locale}/creators`}
             className="hover:text-white transition"
           >
-            Explore
+            {t("explore")}
           </Link>
 
           <Link
             href={`/${locale}/how-it-works`}
             className="hover:text-white transition"
           >
-            How it works
+            {t("howItWorks")}
           </Link>
 
           <Link
             href={`/${locale}/for-creators`}
             className="hover:text-white transition"
           >
-            For creators
+            {t("forCreators")}
           </Link>
         </div>
 
@@ -68,7 +70,7 @@ export default function Navbar() {
             href={`/${locale}/login`}
             className="text-sm text-gray-300 hover:text-white transition"
           >
-            Log in
+            {t("login")}
           </Link>
 
           <Link
@@ -84,7 +86,7 @@ export default function Navbar() {
               transition-all duration-300
             "
           >
-            Get started
+            {t("getStarted")}
           </Link>
         </div>
       </div>

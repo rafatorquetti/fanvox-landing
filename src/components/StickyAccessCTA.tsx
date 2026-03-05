@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 type Props = {
   creatorName: string;
@@ -8,37 +8,26 @@ type Props = {
 
 export default function StickyAccessCTA({ creatorName }: Props) {
   const [visible, setVisible] = useState(false);
-  const [showBar, setShowBar] = useState(false);
-  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentY = window.scrollY;
-
-      // ✅ appear only after meaningful scroll
-      if (currentY > 140) {
+      // ✅ appear almost immediately after user starts scrolling
+      if (window.scrollY > 8) {
         setVisible(true);
       } else {
         setVisible(false);
       }
-
-      // ✅ hide on scroll down, show on scroll up
-      if (currentY > lastScrollY.current && currentY > 200) {
-        setShowBar(false);
-      } else {
-        setShowBar(true);
-      }
-
-      lastScrollY.current = currentY;
     };
 
+    // run once after mount (important for Safari)
     handleScroll();
+
     window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-
-  if (!visible) return null;
 
   return (
     <div
@@ -47,23 +36,22 @@ export default function StickyAccessCTA({ creatorName }: Props) {
         bottom-[max(1rem,env(safe-area-inset-bottom))]
         left-1/2
         z-50
-        w-[92%] sm:w-[94%]
+        w-[92%]
         max-w-xl
         -translate-x-1/2
         transition-all duration-300 ease-out
         ${
-          showBar
+          visible
             ? "translate-y-0 opacity-100"
             : "translate-y-6 opacity-0 pointer-events-none"
         }
       `}
     >
       <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black/80 backdrop-blur-xl px-4 sm:px-6 py-3 sm:py-5 shadow-2xl">
-        {/* subtle glow */}
+        {/* glow */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-purple-600/10 via-transparent to-indigo-600/10" />
 
         <div className="relative flex items-center justify-between gap-4">
-          {/* LEFT — intent stack */}
           <div className="space-y-0.5">
             <p className="text-xs sm:text-sm text-gray-400">
               Get direct access to
@@ -78,7 +66,6 @@ export default function StickyAccessCTA({ creatorName }: Props) {
             </p>
           </div>
 
-          {/* RIGHT — primary action */}
           <button
             className="
               relative

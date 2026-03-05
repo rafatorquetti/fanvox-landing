@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import type { Creator } from "@/lib/creators";
 
 export default function CreatorCard({
@@ -10,12 +11,19 @@ export default function CreatorCard({
   creator: Creator;
   locale: string;
 }) {
+  const tCard = useTranslations("CreatorCard");
+  const tCreator = useTranslations("Creator");
+
+  const descKey = `descriptions.${creator.slug}`;
+  const description =
+    // ✅ Prevents MISSING_MESSAGE crashes and prevents showing "Creator.descriptions.x"
+    (tCreator as any).has?.(descKey) ? tCreator(descKey as any) : creator.description;
+
   return (
     <Link
       href={`/${locale}/creators/${creator.slug}`}
       className="block active:scale-[0.99] transition-transform duration-150"
     >
-      {/* ⭐ wrapper added for clipping stability */}
       <div className="relative rounded-3xl overflow-hidden">
         <div
           className="
@@ -47,12 +55,11 @@ export default function CreatorCard({
               }}
             />
 
-            {/* gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
 
             {creator.verified && (
               <div className="absolute top-3 right-3 bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-medium shadow-md backdrop-blur">
-                ✓ Verified
+                ✓ {tCard("verified")}
               </div>
             )}
           </div>
@@ -89,31 +96,28 @@ export default function CreatorCard({
             {/* CATEGORY */}
             <div className="mt-1 mb-2 sm:mb-3">
               <span className="text-[11px] sm:text-xs px-2.5 sm:px-3 py-1 rounded-full border border-purple-400/40 text-purple-300">
-                {creator.category}
+                {tCreator(`categories.${creator.category}` as any)}
               </span>
             </div>
 
             {/* DESCRIPTION */}
-            <p className="text-sm text-gray-400 line-clamp-2">
-              {creator.description}
-            </p>
+            <p className="text-sm text-gray-400 line-clamp-2">{description}</p>
 
             {/* STATS */}
             <div className="flex items-center justify-between mt-3 sm:mt-4 text-sm">
               <div className="text-yellow-400">
                 ★ {creator.rating}
-                <span className="text-gray-500 ml-1">
-                  ({creator.reviews})
-                </span>
+                <span className="text-gray-500 ml-1">({creator.reviews})</span>
               </div>
+
               <div className="text-gray-400">
-                {creator.interactions} sessions
+                {creator.interactions} {tCard("sessions")}
               </div>
             </div>
 
             {/* RESPONSE */}
             <div className="mt-1.5 sm:mt-2 text-[11px] sm:text-xs text-gray-500">
-              Responds in {creator.responseTime} • {creator.availability}
+              {tCard("respondsIn")} {creator.responseTime} • {creator.availability}
             </div>
           </div>
         </div>
