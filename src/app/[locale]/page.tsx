@@ -42,7 +42,7 @@ export default async function Page({
   return (
     <main className="relative z-10">
       {/* HERO */}
-      <section className="px-6 pt-20 pb-16 md:pt-28 md:pb-24 lg:pt-32 lg:pb-28">
+      <section className="px-6 pt-24 pb-16 md:pt-28 md:pb-24 lg:pt-32 lg:pb-28">
         <div className="mx-auto w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-20 items-center">
           <div>
             <p className="mb-4 text-sm tracking-[0.2em] text-purple-300 uppercase">
