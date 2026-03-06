@@ -61,7 +61,7 @@ export default async function Page({
             <div className="mt-8 flex flex-wrap items-center gap-4 sm:gap-6">
               <Link
                 href={`/${locale}/creators`}
-                className="inline-flex items-center justify-center rounded-xl bg-purple-600 px-8 py-4 text-base font-semibold text-white hover:bg-purple-500 transition"
+                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-[0_0_24px_rgba(139,92,246,0.45)] md:shadow-none hover:scale-[1.02] transition"
               >
                 {t("browseCreators")}
               </Link>
@@ -78,6 +78,57 @@ export default async function Page({
             </div>
 
             <p className="mt-8 text-sm text-gray-400">{t("trustLine")}</p>
+          </div>
+
+          {/* MOBILE HERO CARD */}
+          <div className="lg:hidden mt-10">
+            <div className="relative w-full max-w-sm mx-auto">
+
+              <div className="absolute -inset-6 bg-purple-600/20 blur-[90px] rounded-full"></div>
+
+              <div className="relative rounded-3xl overflow-hidden border border-white/5 bg-black/40 backdrop-blur-xl shadow-2xl">
+
+                <img
+                  src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop"
+                  alt="Featured Creator"
+                  className="h-[360px] w-full object-cover"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+
+                <div className="absolute bottom-0 p-6 w-full">
+
+                  <p className="text-xs tracking-widest text-purple-300 uppercase mb-2">
+                    {t("selectLabel")}
+                  </p>
+
+                  <h3 className="text-xl font-semibold text-white">
+                    Adrian Volkov
+                  </h3>
+
+                  <p className="text-gray-300 text-sm mb-3">
+                    Venture Investor • Ex-Uber
+                  </p>
+
+                  <div className="flex items-center gap-3 text-sm text-gray-300">
+
+                    <span className="text-yellow-400">★ 4.9</span>
+
+                    <span className="opacity-70">(184)</span>
+
+                    <span className="opacity-70">•</span>
+
+                    <span>520 sessions</span>
+
+                    <span className="opacity-70">•</span>
+
+                    <span>~3h</span>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* DESKTOP HERO VISUAL */}
@@ -103,9 +154,26 @@ export default async function Page({
                     Adrian Volkov
                   </h3>
 
-                  <p className="text-gray-300 text-sm">
+                  <p className="text-gray-300 text-sm mb-3">
                     Venture Investor • Ex-Uber
                   </p>
+
+                  <div className="flex items-center gap-3 text-sm text-gray-300">
+
+                    <span className="text-yellow-400">★ 4.9</span>
+
+                    <span className="opacity-70">(184)</span>
+
+                    <span className="opacity-70">•</span>
+
+                    <span>520 sessions</span>
+
+                    <span className="opacity-70">•</span>
+
+                    <span>~3h</span>
+
+                  </div>
+
                 </div>
               </div>
             </div>
