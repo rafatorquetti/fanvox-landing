@@ -10,50 +10,31 @@ type PageProps = {
 function getIndustryRequests(category: string, t: any) {
   switch (category) {
     case "Sports":
-      return [
-        t("industry.sports.req1"),
-        t("industry.sports.req2")
-      ];
+      return [t("industry.sports.req1"), t("industry.sports.req2")];
 
     case "Business":
-      return [
-        t("industry.business.req1"),
-        t("industry.business.req2")
-      ];
+      return [t("industry.business.req1"), t("industry.business.req2")];
 
     case "Venture":
-      return [
-        t("industry.venture.req1"),
-        t("industry.venture.req2")
-      ];
+      return [t("industry.venture.req1"), t("industry.venture.req2")];
 
     case "Science":
-      return [
-        t("industry.science.req1"),
-        t("industry.science.req2")
-      ];
+      return [t("industry.science.req1"), t("industry.science.req2")];
 
     case "Arts":
-      return [
-        t("industry.arts.req1"),
-        t("industry.arts.req2")
-      ];
+      return [t("industry.arts.req1"), t("industry.arts.req2")];
 
     default:
-      return [
-        t("industry.default.req1"),
-        t("industry.default.req2")
-      ];
+      return [t("industry.default.req1"), t("industry.default.req2")];
   }
 }
 
 export default async function CreatorProfilePage({ params }: PageProps) {
-
   const { slug, locale } = await params;
 
   const t = await getTranslations({
     locale,
-    namespace: "Creator"
+    namespace: "Creator",
   });
 
   const creator = creators.find((c) => c.slug === slug);
@@ -89,7 +70,6 @@ export default async function CreatorProfilePage({ params }: PageProps) {
 
         {/* avatar */}
         <div className="absolute left-0 sm:left-2 md:left-4 bottom-0 translate-y-1/2 z-20">
-
           <div className="relative flex items-center">
 
             <div className="h-24 w-24 sm:h-36 sm:w-36 md:h-56 md:w-56 rounded-full overflow-hidden border-4 border-purple-500 bg-black shadow-2xl">
@@ -105,7 +85,6 @@ export default async function CreatorProfilePage({ params }: PageProps) {
             </h1>
 
           </div>
-
         </div>
 
       </section>
@@ -119,9 +98,9 @@ export default async function CreatorProfilePage({ params }: PageProps) {
           {t(`categories.${creator.category}`)}
         </span>
 
-        {/* SHORT BIO — FIXED */}
+        {/* SHORT BIO — TRANSLATED */}
         <p className="text-base sm:text-lg text-gray-300 max-w-2xl leading-relaxed">
-        {creator.description}
+          {t(`descriptions.${creator.slug}`)}
         </p>
 
         {/* EXTENDED BIO */}
@@ -165,7 +144,7 @@ export default async function CreatorProfilePage({ params }: PageProps) {
             t("reqVideo"),
             t("reqCall"),
             t("reqWritten"),
-            ...industryRequests
+            ...industryRequests,
           ].map((item, i) => (
 
             <div

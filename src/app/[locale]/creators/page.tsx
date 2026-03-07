@@ -1,5 +1,6 @@
 import { creators } from "@/lib/creators";
 import CreatorCard from "@/components/CreatorCard";
+import { getTranslations } from "next-intl/server";
 
 export default async function CreatorsPage({
   params,
@@ -8,13 +9,18 @@ export default async function CreatorsPage({
 }) {
   const { locale } = await params;
 
+  const t = await getTranslations({
+    locale,
+    namespace: "CreatorsPage",
+  });
+
   return (
     <main className="mx-auto max-w-7xl px-6 py-28 space-y-12">
       <header className="space-y-4">
-        <h1 className="text-4xl font-bold">Available creators</h1>
+        <h1 className="text-4xl font-bold">{t("title")}</h1>
 
         <p className="text-gray-300 max-w-2xl">
-          Real people. Verified profiles. Ready to respond to your request.
+          {t("subtitle")}
         </p>
       </header>
 
@@ -23,7 +29,7 @@ export default async function CreatorsPage({
           <CreatorCard
             key={creator.slug}
             creator={creator}
-            locale={locale} // ✅ THIS WAS MISSING
+            locale={locale}
           />
         ))}
       </section>

@@ -80,6 +80,11 @@
       "noExclusivity": "No exclusivity • Set your own prices"
     },
   
+    "CreatorsPage": {
+      "title": "Available creators",
+      "subtitle": "Real people. Verified profiles. Ready to respond to your request."
+    },
+
     "CreatorCard": {
       "verified": "Verified",
       "sessions": "sessions",
@@ -101,6 +106,12 @@
   
       "limitedAvailability": "Limited availability this week.",
   
+      "cta": {
+        "access": "Get direct access to",
+        "request": "Request access",
+        "price": "From $49 • Typical response 6h"
+      },
+  
       "categories": {
         "Sports": "Sports",
         "Business": "Business",
@@ -121,27 +132,22 @@
           "req1": "Performance breakdown session",
           "req2": "Mindset & discipline strategy"
         },
-  
         "business": {
           "req1": "Startup pitch feedback",
           "req2": "Scaling strategy consultation"
         },
-  
         "venture": {
           "req1": "Fundraising feedback",
           "req2": "Investor mindset session"
         },
-  
         "science": {
           "req1": "Research insight discussion",
           "req2": "Industry career advice"
         },
-  
         "arts": {
           "req1": "Creative portfolio review",
           "req2": "Storytelling feedback"
         },
-  
         "default": {
           "req1": "Personalized written response",
           "req2": "Custom advisory session"
@@ -161,7 +167,43 @@
         "oliver-grant": "IPO architect mentoring CEOs and boards.",
         "darius-cole": "Fortune 500 executive coaching elite teams.",
         "mei-tan": "Product leader specializing in hyper-growth.",
-        "gabriel-costa": "Operator helping founders scale operations."
+        "gabriel-costa": "Operator helping founders scale operations.",
+  
+        "helena-fischer": "Billionaire VC backing category-defining leaders.",
+        "nora-klein": "Investor focused on fundraising strategy.",
+  
+        "ethan-wright": "Hedge fund operator decoding market behavior.",
+        "omar-hassan": "Macro strategist interpreting global trends.",
+        "amara-okoye": "Global macro analyst focused on emerging markets.",
+  
+        "aisha-rahman": "AI ethics leader advising responsible innovation.",
+        "kenji-watanabe": "Robotics professor applying automation to real-world systems.",
+        "liang-zhou": "Quantum researcher exploring the future of computing.",
+        "sarah-mccall": "Neuroscientist studying peak cognition.",
+        "david-stein": "Biotech founder advancing longevity research.",
+        "maya-patel": "Medical innovator transforming patient care.",
+        "lucas-meyer": "Climate tech scientist building sustainable futures.",
+        "mikhail-volkov": "Robotics engineer explaining AI systems.",
+  
+        "alina-petrova": "Contemporary artist mentoring modern creators.",
+        "mateo-ibarra": "Award-winning director teaching storytelling.",
+        "ana-luiza-santos": "Vocal coach helping artists develop range and control.",
+  
+        "rico-blaze": "Stand-up comedian with two global specials.",
+        "nina-hart": "Hit songwriter crafting unforgettable choruses.",
+  
+        "fatima-alsayeed": "Investigative journalist covering geopolitics.",
+        "theo-harrington": "Former astronaut sharing mission mindset.",
+        "diego-silva": "Film director teaching visual storytelling.",
+  
+        "sienna-blake": "Creative director shaping global brands.",
+        "hana-sato": "Japanese chef teaching knife technique and umami.",
+  
+        "admiral-reed": "Special operations veteran teaching elite leadership.",
+        "naomi-adebayo": "Negotiation expert shaping billion-dollar deals.",
+  
+        "zara-haddad": "Public policy strategist advising global leaders.",
+        "chloe-laurent": "Executive presence coach for high-impact careers."
       }
     }
   }

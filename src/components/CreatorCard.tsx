@@ -16,8 +16,9 @@ export default function CreatorCard({
 
   const descKey = `descriptions.${creator.slug}`;
   const description =
-    // ✅ Prevents MISSING_MESSAGE crashes and prevents showing "Creator.descriptions.x"
-    (tCreator as any).has?.(descKey) ? tCreator(descKey as any) : creator.description;
+    (tCreator as any).has?.(descKey)
+      ? tCreator(descKey as any)
+      : creator.description;
 
   return (
     <Link
@@ -66,6 +67,7 @@ export default function CreatorCard({
 
           {/* CARD BODY */}
           <div className="relative px-4 sm:px-5 pb-4 sm:pb-5 pt-12 sm:pt-14">
+
             {/* AVATAR */}
             <div className="absolute -top-8 sm:-top-10 left-4 sm:left-5">
               <div className="relative">
@@ -101,13 +103,17 @@ export default function CreatorCard({
             </div>
 
             {/* DESCRIPTION */}
-            <p className="text-sm text-gray-400 line-clamp-2">{description}</p>
+            <p className="text-sm text-gray-400 line-clamp-2">
+              {description}
+            </p>
 
             {/* STATS */}
             <div className="flex items-center justify-between mt-3 sm:mt-4 text-sm">
               <div className="text-yellow-400">
                 ★ {creator.rating}
-                <span className="text-gray-500 ml-1">({creator.reviews})</span>
+                <span className="text-gray-500 ml-1">
+                  ({creator.reviews})
+                </span>
               </div>
 
               <div className="text-gray-400">
@@ -117,8 +123,9 @@ export default function CreatorCard({
 
             {/* RESPONSE */}
             <div className="mt-1.5 sm:mt-2 text-[11px] sm:text-xs text-gray-500">
-              {tCard("respondsIn")} {creator.responseTime} • {creator.availability}
+              {tCard("respondsIn")} {creator.responseTime} • {tCard("available")}
             </div>
+
           </div>
         </div>
       </div>

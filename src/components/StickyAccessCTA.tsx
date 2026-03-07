@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 type Props = {
   creatorName: string;
@@ -9,9 +10,10 @@ type Props = {
 export default function StickyAccessCTA({ creatorName }: Props) {
   const [visible, setVisible] = useState(false);
 
+  const t = useTranslations("Creator");
+
   useEffect(() => {
     const handleScroll = () => {
-      // ✅ appear almost immediately after user starts scrolling
       if (window.scrollY > 8) {
         setVisible(true);
       } else {
@@ -19,7 +21,6 @@ export default function StickyAccessCTA({ creatorName }: Props) {
       }
     };
 
-    // run once after mount (important for Safari)
     handleScroll();
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -48,13 +49,12 @@ export default function StickyAccessCTA({ creatorName }: Props) {
       `}
     >
       <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black/80 backdrop-blur-xl px-4 sm:px-6 py-3 sm:py-5 shadow-2xl">
-        {/* glow */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-purple-600/10 via-transparent to-indigo-600/10" />
 
         <div className="relative flex items-center justify-between gap-4">
           <div className="space-y-0.5">
             <p className="text-xs sm:text-sm text-gray-400">
-              Get direct access to
+              {t("cta.access")}
             </p>
 
             <p className="text-base sm:text-lg font-semibold text-white leading-tight">
@@ -62,7 +62,7 @@ export default function StickyAccessCTA({ creatorName }: Props) {
             </p>
 
             <p className="text-[11px] sm:text-xs text-purple-300">
-              From $49 • Typical response 6h
+              {t("cta.price")}
             </p>
           </div>
 
@@ -82,7 +82,7 @@ export default function StickyAccessCTA({ creatorName }: Props) {
               whitespace-nowrap
             "
           >
-            Request access
+            {t("cta.request")}
           </button>
         </div>
       </div>

@@ -61,7 +61,12 @@
       "login": "Entrar",
       "getStarted": "Começar"
     },
-  
+
+    "CreatorsPage": {
+      "title": "Criadores disponíveis",
+      "subtitle": "Pessoas reais. Perfis verificados. Prontos para responder ao seu pedido."
+    },
+    
     "CreatorCard": {
       "verified": "Verificado",
       "sessions": "sessões",
@@ -79,6 +84,12 @@
       "reqCall": "Chamada privada de 30 minutos",
       "reqWritten": "5 respostas escritas",
       "limitedAvailability": "Disponibilidade limitada esta semana.",
+
+      "cta": {
+        "access": "Tenha acesso direto a",
+        "request": "Solicitar acesso",
+        "price": "A partir de $49 • Resposta típica 6h"
+      },
   
       "categories": {
         "Sports": "Esportes",

@@ -83,11 +83,9 @@ export default async function Page({
           {/* MOBILE HERO CARD */}
           <div className="lg:hidden mt-10">
             <div className="relative w-full max-w-sm mx-auto">
-
               <div className="absolute -inset-6 bg-purple-600/20 blur-[90px] rounded-full"></div>
 
               <div className="relative rounded-3xl overflow-hidden border border-white/5 bg-black/40 backdrop-blur-xl shadow-2xl">
-
                 <img
                   src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop"
                   alt="Featured Creator"
@@ -97,7 +95,6 @@ export default async function Page({
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
 
                 <div className="absolute bottom-0 p-6 w-full">
-
                   <p className="text-xs tracking-widest text-purple-300 uppercase mb-2">
                     {t("selectLabel")}
                   </p>
@@ -111,21 +108,13 @@ export default async function Page({
                   </p>
 
                   <div className="flex items-center gap-3 text-sm text-gray-300">
-
                     <span className="text-yellow-400">★ 4.9</span>
-
                     <span className="opacity-70">(184)</span>
-
                     <span className="opacity-70">•</span>
-
                     <span>520 sessions</span>
-
                     <span className="opacity-70">•</span>
-
                     <span>~3h</span>
-
                   </div>
-
                 </div>
               </div>
             </div>
@@ -133,14 +122,14 @@ export default async function Page({
 
           {/* DESKTOP HERO VISUAL */}
           <div className="hidden lg:flex justify-end">
-            <div className="relative w-[420px]">
-              <div className="absolute -inset-10 bg-purple-600/10 blur-[120px] rounded-full" />
+            <div className="relative w-[420px] group">
+              <div className="absolute -inset-10 bg-purple-600/5 blur-[120px] rounded-full transition duration-500 group-hover:bg-purple-600/10" />
 
-              <div className="relative rounded-3xl overflow-hidden border border-white/5 bg-black/40 backdrop-blur-xl shadow-2xl">
+              <div className="relative rounded-3xl overflow-hidden border border-white/5 bg-black/40 backdrop-blur-xl shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:shadow-[0_25px_60px_rgba(124,58,237,0.25)]">
                 <img
                   src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=1200&auto=format&fit=crop"
                   alt="Featured Creator"
-                  className="h-[520px] w-full object-cover"
+                  className="h-[520px] w-full object-cover transition duration-700 group-hover:scale-[1.03]"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
@@ -159,21 +148,13 @@ export default async function Page({
                   </p>
 
                   <div className="flex items-center gap-3 text-sm text-gray-300">
-
                     <span className="text-yellow-400">★ 4.9</span>
-
                     <span className="opacity-70">(184)</span>
-
                     <span className="opacity-70">•</span>
-
                     <span>520 sessions</span>
-
                     <span className="opacity-70">•</span>
-
                     <span>~3h</span>
-
                   </div>
-
                 </div>
               </div>
             </div>
@@ -220,7 +201,10 @@ export default async function Page({
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="px-6 py-20 sm:py-24 lg:py-28 overflow-hidden">
+      <section
+        id="how-it-works"
+        className="px-6 py-20 sm:py-24 lg:py-28 overflow-hidden"
+      >
         <div className="mx-auto w-full max-w-6xl text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white mb-6">
             {t("stepsTitle")}
@@ -250,22 +234,8 @@ export default async function Page({
             ].map((step) => (
               <div
                 key={step.number}
-                className="
-                  group
-                  relative
-                  rounded-3xl
-                  border border-white/5
-                  bg-white/[0.02]
-                  backdrop-blur-xl
-                  p-8 sm:p-10
-                  text-left
-                  transition-all duration-300
-                  hover:border-purple-500/40
-                  hover:shadow-[0_0_40px_rgba(124,58,237,0.15)]
-                  hover:-translate-y-1
-                "
+                className="group relative rounded-3xl border border-white/5 bg-white/[0.02] backdrop-blur-xl p-8 sm:p-10 text-left transition-all duration-300 hover:border-purple-500/40 hover:shadow-[0_0_40px_rgba(124,58,237,0.15)] hover:-translate-y-1"
               >
-                {/* glow */}
                 <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-600/0 via-transparent to-indigo-600/0 group-hover:from-purple-600/10 group-hover:to-indigo-600/10 transition" />
 
                 <div className="relative text-5xl font-black text-white/10 mb-6">
@@ -357,7 +327,10 @@ export default async function Page({
       </section>
 
       {/* FOR CREATORS */}
-      <section className="px-6 pt-20 pb-24 sm:pt-24 sm:pb-28 lg:pt-28 lg:pb-32">
+      <section
+        id="for-creators"
+        className="px-6 pt-20 pb-24 sm:pt-24 sm:pb-28 lg:pt-28 lg:pb-32"
+      >
         <div className="mx-auto w-full max-w-6xl rounded-3xl border border-white/5 bg-gradient-to-br from-indigo-950 via-black to-purple-950 p-8 sm:p-12 lg:p-16">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
