@@ -72,8 +72,8 @@ export default function Navbar() {
         className={`
         w-full max-w-6xl
         flex items-center justify-between
-        px-5 sm:px-6
-        py-3.5 sm:py-3
+        px-4 sm:px-6
+        py-3 sm:py-3
         rounded-2xl
         border
         backdrop-blur-xl
@@ -87,17 +87,8 @@ export default function Navbar() {
       `}
       >
         {/* LOGO */}
-        <Link href={`/${locale}`} className="flex items-center gap-3">
-          <div
-            className="
-            h-10 w-10
-            rounded-xl
-            bg-gradient-to-br from-purple-500 to-indigo-600
-            shadow-[0_0_20px_rgba(124,58,237,0.5)]
-          "
-          />
-
-          <span className="text-base sm:text-lg font-semibold tracking-tight text-white">
+        <Link href={`/${locale}`} className="flex items-center">
+          <span className="text-lg sm:text-lg font-semibold tracking-tight text-white">
             Fanvox
           </span>
         </Link>
@@ -140,7 +131,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3 sm:gap-6">
 
           {/* LANGUAGE SWITCH */}
-          <div className="flex items-center gap-2 text-sm">
+          <div className="flex items-center gap-2 text-xs sm:text-sm">
 
             <Link
               href={switchLocale("en")}
@@ -170,7 +161,7 @@ export default function Navbar() {
 
           <Link
             href={`/${locale}/login`}
-            className="text-xs sm:text-sm text-gray-300 hover:text-white transition"
+            className="hidden sm:block text-sm text-gray-300 hover:text-white transition"
           >
             {t("login")}
           </Link>
@@ -179,9 +170,9 @@ export default function Navbar() {
             href={`/${locale}/signup`}
             className="
               rounded-xl
-              px-5 sm:px-6
+              px-4 sm:px-6
               py-2.5 sm:py-2.5
-              text-sm font-semibold text-white
+              text-xs sm:text-sm font-semibold text-white
               bg-gradient-to-r from-purple-600 to-indigo-600
               shadow-[0_0_25px_rgba(124,58,237,0.35)]
               hover:shadow-[0_0_40px_rgba(124,58,237,0.6)]
