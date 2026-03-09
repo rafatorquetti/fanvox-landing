@@ -1,0 +1,202 @@
+{
+  "Navbar": {
+    "explore": "Explorar",
+    "howItWorks": "Como Funciona",
+    "forCreators": "Para Criadores",
+    "login": "Entrar",
+    "getStarted": "Crie sua Conta"
+  },
+
+  "Home": {
+    "heroBadge": "O marketplace para acesso direto aos seus influenciadores",
+
+    "heroTitle1": "Conecte-se com quem",
+    "heroTitleHighlight": "está moldando o futuro",
+
+    "heroSubtitle": "Peça vídeos, chamadas ou mensagens personalizadas direto com criadores verificados.",
+
+    "browseCreators": "Explorar Criadores",
+    "creatorCta": "É criador de conteúdo?",
+    "learnMore": "Saiba mais",
+
+    "trustLine": "Sem assinatura • Pagamento via Stripe • Garantia de reembolso",
+
+    "selectLabel": "FANVOX SELECT",
+    "creatorsTitle": "Criadores que estão redefinindo as regras do jogo",
+
+    "closerTitle": "Mais perto de quem te inspira.",
+    "closerSubtitle": "Sem intermediários. Sem ruído.",
+
+    "stepsTitle": "Acesso direto em três passos",
+    "stepsSubtitle": "Sem assinatura. Sem intermediários.",
+
+    "steps": {
+      "explore": {
+        "title": "Explore",
+        "description": "Descubra personalidades disponíveis para interações."
+      },
+      "request": {
+        "title": "Peça",
+        "description": "Solicite o conteúdo disponibilizado pelo criador de conteúdo (um vídeo, uma chamada, uma mensagem etc)."
+      },
+      "receive": {
+        "title": "Receba",
+        "description": "Receba sua experiência personalizada com entrega garantida."
+      }
+    },
+
+    "trustedBy": "Criadores de renome já estão por aqui",
+
+    "realTitle": "Pedidos reais. Conexões reais.",
+    "realSubtitle": "Acesso direto acontecendo agora.",
+
+    "real": {
+      "card1": {
+        "title": "Vídeo de aniversário entregue",
+        "subtitle": "Mensagem personalizada enviada de Londres",
+        "time": "há 2 min"
+      },
+      "card2": {
+        "title": "Pitch de startup analisado",
+        "subtitle": "Fundador recebeu feedback de um investidor",
+        "time": "agora"
+      },
+      "card3": {
+        "title": "Chamada estratégica concluída",
+        "subtitle": "Sessão privada de 30 minutos com um operador experiente",
+        "time": "há 9 min"
+      }
+    },
+
+    "creatorRevenueTitle": "Transforme sua audiência em uma nova fonte de receita.",
+    "creatorRevenueSubtitle": "Fãs querem acesso direto. A Fanvox cuida dos pedidos, pagamentos e da entrega — você foca em criar experiências inesquecíveis.",
+
+    "creatorStats": {
+      "income": "Renda média mensal de criadores",
+      "fulfillment": "Tempo médio de entrega",
+      "revenueShare": "Participação do criador",
+      "fans": "Fãs prontos para contratar"
+    },
+
+    "startEarning": "Crie sua Conta",
+    "noExclusivity": "Sem exclusividade • Defina seus próprios preços"
+  },
+
+  "CreatorsPage": {
+    "title": "Explore criadores extraordinários",
+    "subtitle": "Pessoas reais. Perfis verificados. Prontos para atender ao seu pedido."
+  },
+
+  "CreatorCard": {
+    "verified": "Verificado",
+    "sessions": "sessões",
+    "respondsIn": "Responde em",
+    "available": "Disponível"
+  },
+
+  "Creator": {
+    "extendedBio": "Pela Fanvox, você pode solicitar interações diretas e personalizadas comigo. Pode ser um conselho estratégico, um insight profissional, feedback de performance ou uma mensagem especial.",
+
+    "reviews": "avaliações",
+    "completedRequests": "pedidos concluídos",
+    "avgResponse": "tempo médio de resposta",
+
+    "popularRequests": "Pedidos populares",
+    "reqVideo": "Vídeo personalizado",
+    "reqCall": "Chamada privada de 30 minutos",
+    "reqWritten": "5 respostas escritas",
+
+    "limitedAvailability": "Disponibilidade limitada esta semana.",
+
+    "cta": {
+      "access": "Tenha acesso direto a",
+      "request": "Solicitar acesso",
+      "price": "A partir de $49 • Resposta média: 6h"
+    },
+
+    "categories": {
+      "Sports": "Esportes",
+      "Business": "Negócios",
+      "Venture": "Venture Capital",
+      "Science": "Ciência",
+      "Arts": "Artes",
+      "Finance": "Finanças",
+      "Entertainment": "Entretenimento",
+      "Media": "Mídia",
+      "Lifestyle": "Estilo de vida",
+      "Leadership": "Liderança",
+      "Politics": "Política",
+      "Education": "Educação"
+    },
+
+    "industry": {
+      "sports": {
+        "req1": "Análise de performance",
+        "req2": "Estratégia de mentalidade e disciplina"
+      },
+      "business": {
+        "req1": "Feedback sobre pitch de startup",
+        "req2": "Consultoria de estratégia de crescimento"
+      },
+      "venture": {
+        "req1": "Feedback sobre captação de investimento",
+        "req2": "Sessão sobre mentalidade de investidor"
+      },
+      "science": {
+        "req1": "Discussão sobre pesquisa",
+        "req2": "Conselhos de carreira científica"
+      },
+      "arts": {
+        "req1": "Avaliação de portfólio criativo",
+        "req2": "Feedback sobre storytelling"
+      },
+      "default": {
+        "req1": "Resposta personalizada",
+        "req2": "Sessão de aconselhamento"
+      }
+    },
+
+    "descriptions": {
+      "marcus-johnson": "Ex-campeão da NBA mentorando atletas de alta performance.",
+      "elena-kovacs": "Nadadora olímpica ensinando força mental.",
+      "tyrell-brooks": "Ex-receiver da NFL treinando velocidade e separação.",
+      "isabella-rocha": "Treinadora de performance construindo disciplina e resiliência.",
+      "chen-hao": "Lenda do tênis de mesa ensinando precisão e foco.",
+      "keisha-morgan": "Treinadora de sprint desenvolvendo largadas explosivas.",
+      "javier-ruiz": "Treinador de boxe refinando timing e potência.",
+      "priya-desai": "Psicóloga esportiva desenvolvendo confiança sob pressão.",
+      "luca-bianchi": "Treinador de ciclismo profissional focado em estratégia de corrida.",
+      "oliver-grant": "Especialista em IPO mentorando CEOs e conselhos.",
+      "darius-cole": "Executivo Fortune 500 treinando equipes de elite.",
+      "mei-tan": "Líder de produto especializada em crescimento acelerado.",
+      "gabriel-costa": "Operador ajudando fundadores a escalar operações.",
+      "helena-fischer": "VC bilionária investindo em líderes que definem categorias.",
+      "nora-klein": "Investidora focada em estratégia de fundraising.",
+      "ethan-wright": "Gestor de hedge fund decifrando comportamento de mercado.",
+      "omar-hassan": "Estrategista macro interpretando tendências globais.",
+      "amara-okoye": "Analista macro focada em mercados emergentes.",
+      "aisha-rahman": "Líder em ética de IA orientando inovação responsável.",
+      "kenji-watanabe": "Professor de robótica aplicando automação no mundo real.",
+      "liang-zhou": "Pesquisador de computação quântica.",
+      "sarah-mccall": "Neurocientista estudando cognição de alto desempenho.",
+      "david-stein": "Fundador biotech avançando pesquisa de longevidade.",
+      "maya-patel": "Inovadora médica transformando cuidados de saúde.",
+      "lucas-meyer": "Cientista de tecnologia climática construindo soluções sustentáveis.",
+      "mikhail-volkov": "Engenheiro de robótica explicando sistemas de IA.",
+      "alina-petrova": "Artista contemporânea mentorando criadores modernos.",
+      "mateo-ibarra": "Diretor premiado ensinando storytelling.",
+      "ana-luiza-santos": "Coach vocal ajudando artistas a desenvolver alcance e controle.",
+      "rico-blaze": "Comediante stand-up com especiais globais.",
+      "nina-hart": "Compositora de hits criando refrões inesquecíveis.",
+      "fatima-alsayeed": "Jornalista investigativa cobrindo geopolítica.",
+      "theo-harrington": "Ex-astronauta compartilhando mentalidade de missão.",
+      "diego-silva": "Diretor de cinema ensinando narrativa visual.",
+      "sienna-blake": "Diretora criativa moldando marcas globais.",
+      "hana-sato": "Chef japonesa ensinando técnica de faca e umami.",
+      "admiral-reed": "Veterano de operações especiais ensinando liderança de elite.",
+      "naomi-adebayo": "Especialista em negociação em acordos bilionários.",
+      "zara-haddad": "Estrategista de políticas públicas.",
+      "chloe-laurent": "Coach de presença executiva para carreiras de alto impacto."
+    }
+  }
+}

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
 
-const locales = ["en", "pt-BR"] as const;
+const locales = ["en", "pt"] as const;
 
 export default async function LocaleLayout({
   children,

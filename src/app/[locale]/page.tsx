@@ -14,13 +14,12 @@ export async function generateMetadata({
 
   const titles = {
     en: "Fanvox — Personalized access to creators",
-    "pt-BR": "Fanvox — Acesso personalizado a criadores",
+    pt: "Fanvox — Acesso personalizado a criadores",
   };
 
   const descriptions = {
     en: "Request personalized videos, calls, and messages directly from verified creators.",
-    "pt-BR":
-      "Solicite vídeos, chamadas e mensagens personalizadas diretamente de criadores verificados.",
+    pt: "Solicite vídeos, chamadas e mensagens personalizadas diretamente de criadores verificados.",
   };
 
   return {
@@ -38,6 +37,11 @@ export default async function Page({
   const { locale } = await params;
 
   const t = await getTranslations({ locale, namespace: "Home" } as any);
+
+  const featuredRole =
+    locale === "pt" ? "Investidor de Venture • Ex-Uber" : "Venture Investor • Ex-Uber";
+
+  const featuredSessions = locale === "pt" ? "520 sessões" : "520 sessions";
 
   return (
     <main className="relative z-10">
@@ -104,14 +108,14 @@ export default async function Page({
                   </h3>
 
                   <p className="text-gray-300 text-sm mb-3">
-                    Venture Investor • Ex-Uber
+                    {featuredRole}
                   </p>
 
                   <div className="flex items-center gap-3 text-sm text-gray-300">
                     <span className="text-yellow-400">★ 4.9</span>
                     <span className="opacity-70">(184)</span>
                     <span className="opacity-70">•</span>
-                    <span>520 sessions</span>
+                    <span>{featuredSessions}</span>
                     <span className="opacity-70">•</span>
                     <span>~3h</span>
                   </div>
@@ -144,14 +148,14 @@ export default async function Page({
                   </h3>
 
                   <p className="text-gray-300 text-sm mb-3">
-                    Venture Investor • Ex-Uber
+                    {featuredRole}
                   </p>
 
                   <div className="flex items-center gap-3 text-sm text-gray-300">
                     <span className="text-yellow-400">★ 4.9</span>
                     <span className="opacity-70">(184)</span>
                     <span className="opacity-70">•</span>
-                    <span>520 sessions</span>
+                    <span>{featuredSessions}</span>
                     <span className="opacity-70">•</span>
                     <span>~3h</span>
                   </div>
@@ -354,10 +358,10 @@ export default async function Page({
 
             <div className="grid grid-cols-2 gap-4 sm:gap-6">
               {[
-                ["$2.4k", "Avg. monthly creator income"],
-                ["48h", "Typical fulfillment time"],
-                ["85%", "Creator revenue share"],
-                ["Global", "Fans ready to book you"],
+                ["$2.4k", t("creatorStats.income")],
+                ["48h", t("creatorStats.fulfillment")],
+                ["85%", t("creatorStats.revenueShare")],
+                ["Global", t("creatorStats.fans")],
               ].map(([title, subtitle], i) => (
                 <div
                   key={i}

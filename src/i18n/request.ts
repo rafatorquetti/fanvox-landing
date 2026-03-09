@@ -1,10 +1,10 @@
 import { getRequestConfig } from "next-intl/server";
 
-const locales = ["en", "pt-BR"] as const;
+const locales = ["en", "pt"] as const;
 const defaultLocale = "en";
 
 export default getRequestConfig(async ({ locale }) => {
-  // ✅ HARD GUARD against undefined
+
   const resolvedLocale =
     locale && locales.includes(locale as any)
       ? locale
@@ -14,4 +14,5 @@ export default getRequestConfig(async ({ locale }) => {
     locale: resolvedLocale,
     messages: (await import(`../messages/${resolvedLocale}.json`)).default
   };
+
 });

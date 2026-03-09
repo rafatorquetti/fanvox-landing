@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const params = useParams();
+  const pathname = usePathname();
+
   const locale = (params?.locale as string) || "en";
   const t = useTranslations("Navbar");
 
@@ -19,8 +21,7 @@ export default function Navbar() {
 
     const offset = 110;
 
-    const top =
-      el.getBoundingClientRect().top + window.scrollY - offset;
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
 
     window.history.pushState(null, "", `#${id}`);
 
@@ -58,6 +59,12 @@ export default function Navbar() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const switchLocale = (targetLocale: string) => {
+    const segments = pathname.split("/");
+    segments[1] = targetLocale;
+    return segments.join("/");
+  };
 
   return (
     <div className="fixed top-4 md:top-6 left-0 right-0 z-50 flex justify-center px-4 sm:px-6">
@@ -130,11 +137,40 @@ export default function Navbar() {
         </div>
 
         {/* ACTIONS */}
-        <div className="flex items-center gap-4 sm:gap-6">
+        <div className="flex items-center gap-3 sm:gap-6">
+
+          {/* LANGUAGE SWITCH */}
+          <div className="flex items-center gap-2 text-sm">
+
+            <Link
+              href={switchLocale("en")}
+              className={`transition ${
+                locale === "en"
+                  ? "text-white font-semibold"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              EN
+            </Link>
+
+            <span className="text-gray-500">|</span>
+
+            <Link
+              href={switchLocale("pt")}
+              className={`transition ${
+                locale === "pt"
+                  ? "text-white font-semibold"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              PT
+            </Link>
+
+          </div>
 
           <Link
             href={`/${locale}/login`}
-            className="text-sm text-gray-300 hover:text-white transition"
+            className="text-xs sm:text-sm text-gray-300 hover:text-white transition"
           >
             {t("login")}
           </Link>
