@@ -8,7 +8,7 @@
   },
 
   "Home": {
-    "heroBadge": "O marketplace para acesso direto aos seus influenciadores",
+    "heroBadge": "O seu marketplace de acesso a criadores",
 
     "heroTitle1": "Conecte-se com quem",
     "heroTitleHighlight": "está moldando o futuro",
@@ -16,7 +16,7 @@
     "heroSubtitle": "Peça vídeos, chamadas ou mensagens personalizadas direto com criadores verificados.",
 
     "browseCreators": "Explorar Criadores",
-    "creatorCta": "É criador de conteúdo?",
+    "creatorCta": "Você é criador de conteúdo?",
     "learnMore": "Saiba mais",
 
     "trustLine": "Sem assinatura • Pagamento via Stripe • Garantia de reembolso",
@@ -25,56 +25,56 @@
     "creatorsTitle": "Criadores que estão redefinindo as regras do jogo",
 
     "closerTitle": "Mais perto de quem te inspira.",
-    "closerSubtitle": "Sem intermediários. Sem ruído.",
+    "closerSubtitle": "Sem intermediários.",
 
     "stepsTitle": "Acesso direto em três passos",
-    "stepsSubtitle": "Sem assinatura. Sem intermediários.",
+    "stepsSubtitle": "Veja como é fácil.",
 
     "steps": {
       "explore": {
         "title": "Explore",
-        "description": "Descubra personalidades disponíveis para interações."
+        "description": "personalidades disponíveis."
       },
       "request": {
-        "title": "Peça",
-        "description": "Solicite o conteúdo disponibilizado pelo criador de conteúdo (um vídeo, uma chamada, uma mensagem etc)."
+        "title": "Selecione",
+        "description": "o serviço desejado (um vídeo, uma chamada ou uma mensagem)."
       },
       "receive": {
         "title": "Receba",
-        "description": "Receba sua experiência personalizada com entrega garantida."
+        "description": "sua experiência personalizada inesquecível!"
       }
     },
 
-    "trustedBy": "Criadores de renome já estão por aqui",
+    "trustedBy": "Criadores que estão fazendo a diferença e criando tendências",
 
     "realTitle": "Pedidos reais. Conexões reais.",
-    "realSubtitle": "Acesso direto acontecendo agora.",
+    "realSubtitle": "Interações acontecendo agora.",
 
     "real": {
       "card1": {
-        "title": "Vídeo de aniversário entregue",
-        "subtitle": "Mensagem personalizada enviada de Londres",
+        "title": "Vídeo de parabéns entregue",
+        "subtitle": "Mensagem personalizada enviada para um fã",
         "time": "há 2 min"
       },
       "card2": {
-        "title": "Pitch de startup analisado",
-        "subtitle": "Fundador recebeu feedback de um investidor",
+        "title": "Idéia de startup avaliada",
+        "subtitle": "Fundador recebeu dicas de um investidor",
         "time": "agora"
       },
       "card3": {
-        "title": "Chamada estratégica concluída",
-        "subtitle": "Sessão privada de 30 minutos com um operador experiente",
+        "title": "Chamada concluída",
+        "subtitle": "Sessão de 30 minutos com um broker experiente",
         "time": "há 9 min"
       }
     },
 
     "creatorRevenueTitle": "Transforme sua audiência em uma nova fonte de receita.",
-    "creatorRevenueSubtitle": "Fãs querem acesso direto. A Fanvox cuida dos pedidos, pagamentos e da entrega — você foca em criar experiências inesquecíveis.",
+    "creatorRevenueSubtitle": "Fãs querem acesso direto. Fanvox cuida dos pedidos, pagamentos e da entrega — você foca em criar experiências inesquecíveis.",
 
     "creatorStats": {
-      "income": "Renda média mensal de criadores",
+      "income": "Ganho médio mensal de criadores",
       "fulfillment": "Tempo médio de entrega",
-      "revenueShare": "Participação do criador",
+      "revenueShare": "Participação",
       "fans": "Fãs prontos para contratar"
     },
 
@@ -82,9 +82,138 @@
     "noExclusivity": "Sem exclusividade • Defina seus próprios preços"
   },
 
+  "ForCreators": {
+    "heroTitle1": "Transforme sua audiência em",
+    "heroTitleHighlight": " renda",
+    "heroSubtitle": "Ofereça vídeos personalizados, chamadas ou mensagens diretamente para seus fãs. Fanvox permite que criadores monetizem interações com seus seguidores.",
+    "startEarning": "Começar a ganhar",
+    "backToHomepage": "Voltar para a página inicial",
+
+    "heroCardLabel": "Exemplo de pedido",
+    "heroCardTitle": "Chamada de 20 minutos sobre estratégia de startup",
+    "heroCardSubtitle": "Fundador pedindo feedback sobre sua idéia.",
+    "heroCardPrice": "Pedido de $120",
+    "heroCardDelivery": "Entrega em 24h",
+
+    "benefitsTitle": "Por que criadores usam Fanvox",
+    "benefitsSubtitle": "Fanvox permite monetizar o acesso direto ao seu conhecimento, criatividade e experiência.",
+
+    "benefits": {
+      "monetize": {
+        "title": "Monetize sua audiência",
+        "description": "Seus seguidores querem acesso direto a você. Transforme essa demanda em oportunidade."
+      },
+      "schedule": {
+        "title": "Trabalhe no seu ritmo",
+        "description": "Aceite pedidos quando quiser. Você controla sua disponibilidade."
+      },
+      "global": {
+        "title": "Audiência global",
+        "description": "Conecte-se com admiradores, fãs e seguidores de todo o mundo."
+      }
+    },
+
+    "perfectForTitle": "Quem pode usar Fanvox",
+    "perfectForSubtitle": "Se as pessoas valorizam seu conhecimento, perspectiva ou criatividade, há demanda por acesso direto.",
+
+    "perfectFor": {
+      "entrepreneurs": {
+        "title": "Empreendedores",
+        "description": "Compartilhe conselhos sobre startups, estratégia e carreira."
+      },
+      "athletes": {
+        "title": "Atletas",
+        "description": "Conecte-se com fãs através de vídeos personalizados ou chamadas."
+      },
+      "scientists": {
+        "title": "Cientistas e especialistas",
+        "description": "Ofereça mentorias e insights sobre sua área."
+      },
+      "artists": {
+        "title": "Artistas",
+        "description": "Forneça feedback criativo ou inspiração."
+      },
+      "investors": {
+        "title": "Investidores",
+        "description": "Ajude fundadores a melhorar seus pitches e estratégias."
+      },
+      "creators": {
+        "title": "Criadores",
+        "description": "Construa relações mais profundas com sua audiência."
+      }
+    },
+
+    "howItWorksTitle": "Como funciona",
+
+    "howItWorks": {
+      "step1": {
+        "title": "Crie seu perfil",
+        "description": "Monte sua página de criador e defina os serviços."
+      },
+      "step2": {
+        "title": "Receba pedidos",
+        "description": "Fãs enviam os pedidos."
+      },
+      "step3": {
+        "title": "Fature",
+        "description": "Entregue a experiência e receba o pagamento."
+      }
+    },
+
+    "exampleCreatorsTitle": "Exemplos de criadores",
+    "exampleCreatorsSubtitle": "Criadores de diversas áreas já estão monetizando interações.",
+
+    "exampleCreators": {
+      "founder": {
+        "title": "Fundador de startup",
+        "description": "Oferece chamadas de conselho estratégico.",
+        "price1": "Chamada de conselho: $150",
+        "price2": "Revisão de pitch: $200",
+        "potential": "Potencial: $3k–$8k / mês"
+      },
+      "athlete": {
+        "title": "Atleta profissional",
+        "description": "Vídeos personalizados e mensagens motivacionais.",
+        "price1": "Vídeo personalizado: $80",
+        "price2": "Chamada privada: $250",
+        "potential": "Potencial: $5k–$20k / mês"
+      },
+      "scientist": {
+        "title": "Cientista",
+        "description": "Mentorias e discussões sobre pesquisa.",
+        "price1": "Mentoria: $120",
+        "price2": "Sessão de perguntas: $90",
+        "potential": "Potencial: $2k–$6k / mês"
+      }
+    },
+
+    "realRequestsTitle": "Pedidos reais",
+    "realRequestsSubtitle": "Fãs procuram interação genuína.",
+
+    "realRequests": {
+      "card1": {
+        "title": "“Pode avaliar meu pitch de startup?”",
+        "description": "Fundador buscando feedback de um investidor."
+      },
+      "card2": {
+        "title": "“Pode gravar um vídeo de aniversário?”",
+        "description": "Fã pedindo uma mensagem personalizada."
+      },
+      "card3": {
+        "title": "“Podemos fazer uma chamada de 30 minutos?”",
+        "description": "Estudante buscando mentoria."
+      }
+    },
+
+    "finalTitle": "Comece a ganhar com a Fanvox",
+    "finalSubtitle": "Você já tem uma base de fãs? Transforme seus seguidores em renda.",
+    "applyAsCreator": "Crie sua Conta",
+    "finalNote": "Sem exclusividade. Você controla seus preços e disponibilidade."
+  },
+
   "CreatorsPage": {
-    "title": "Explore criadores extraordinários",
-    "subtitle": "Pessoas reais. Perfis verificados. Prontos para atender ao seu pedido."
+    "title": "Influencers disponíveis em nossa plataforma",
+    "subtitle": "Pessoas reais. Perfis verificados. Prontos para você."
   },
 
   "CreatorCard": {
@@ -95,7 +224,7 @@
   },
 
   "Creator": {
-    "extendedBio": "Pela Fanvox, você pode solicitar interações diretas e personalizadas comigo. Pode ser um conselho estratégico, um insight profissional, feedback de performance ou uma mensagem especial.",
+    "extendedBio": "Na Fanvox, você pode solicitar interações personalizadas comigo. Pode ser um conselho, um insight, um feedback de qualuqer natureza ou uma mensagem especial.",
 
     "reviews": "avaliações",
     "completedRequests": "pedidos concluídos",
@@ -117,7 +246,7 @@
     "categories": {
       "Sports": "Esportes",
       "Business": "Negócios",
-      "Venture": "Venture Capital",
+      "Venture": "Capital de Risco",
       "Science": "Ciência",
       "Arts": "Artes",
       "Finance": "Finanças",
@@ -132,11 +261,11 @@
     "industry": {
       "sports": {
         "req1": "Análise de performance",
-        "req2": "Estratégia de mentalidade e disciplina"
+        "req2": "Estratégia, mentalidade e disciplina"
       },
       "business": {
         "req1": "Feedback sobre pitch de startup",
-        "req2": "Consultoria de estratégia de crescimento"
+        "req2": "Consultoria em estratégia de crescimento"
       },
       "venture": {
         "req1": "Feedback sobre captação de investimento",
@@ -158,45 +287,45 @@
 
     "descriptions": {
       "marcus-johnson": "Ex-campeão da NBA mentorando atletas de alta performance.",
-      "elena-kovacs": "Nadadora olímpica ensinando força mental.",
-      "tyrell-brooks": "Ex-receiver da NFL treinando velocidade e separação.",
+      "elena-kovacs": "Nadadora olímpica ensinando resiliência.",
+      "tyrell-brooks": "Ex-jogador da NFL treinando performance sob pressão.",
       "isabella-rocha": "Treinadora de performance construindo disciplina e resiliência.",
       "chen-hao": "Lenda do tênis de mesa ensinando precisão e foco.",
-      "keisha-morgan": "Treinadora de sprint desenvolvendo largadas explosivas.",
+      "keisha-morgan": "Treinadora de atletismo desenvolvendo largadas explosivas.",
       "javier-ruiz": "Treinador de boxe refinando timing e potência.",
       "priya-desai": "Psicóloga esportiva desenvolvendo confiança sob pressão.",
-      "luca-bianchi": "Treinador de ciclismo profissional focado em estratégia de corrida.",
-      "oliver-grant": "Especialista em IPO mentorando CEOs e conselhos.",
+      "luca-bianchi": "Treinador de ciclismo focado em estratégia de corrida.",
+      "oliver-grant": "Especialista em IPO mentorando CEOs e conselhos gestores.",
       "darius-cole": "Executivo Fortune 500 treinando equipes de elite.",
       "mei-tan": "Líder de produto especializada em crescimento acelerado.",
-      "gabriel-costa": "Operador ajudando fundadores a escalar operações.",
-      "helena-fischer": "VC bilionária investindo em líderes que definem categorias.",
+      "gabriel-costa": "Conselheiro ajudando fundadores a escalar operações.",
+      "helena-fischer": "Investidora em líderes que sabem colocar boas idéias em prática.",
       "nora-klein": "Investidora focada em estratégia de fundraising.",
       "ethan-wright": "Gestor de hedge fund decifrando comportamento de mercado.",
-      "omar-hassan": "Estrategista macro interpretando tendências globais.",
-      "amara-okoye": "Analista macro focada em mercados emergentes.",
+      "omar-hassan": "Macro-estrategista interpretando tendências globais.",
+      "amara-okoye": "Analista focada em mercados emergentes.",
       "aisha-rahman": "Líder em ética de IA orientando inovação responsável.",
       "kenji-watanabe": "Professor de robótica aplicando automação no mundo real.",
       "liang-zhou": "Pesquisador de computação quântica.",
       "sarah-mccall": "Neurocientista estudando cognição de alto desempenho.",
-      "david-stein": "Fundador biotech avançando pesquisa de longevidade.",
-      "maya-patel": "Inovadora médica transformando cuidados de saúde.",
-      "lucas-meyer": "Cientista de tecnologia climática construindo soluções sustentáveis.",
+      "david-stein": "Fundador de health tech pesquisando longevidade humana.",
+      "maya-patel": "Médica revolucionando cuidados de saúde.",
+      "lucas-meyer": "Cientista de pesquisa climática construindo soluções sustentáveis.",
       "mikhail-volkov": "Engenheiro de robótica explicando sistemas de IA.",
-      "alina-petrova": "Artista contemporânea mentorando criadores modernos.",
+      "alina-petrova": "Artista contemporânea mentorando novos artistas.",
       "mateo-ibarra": "Diretor premiado ensinando storytelling.",
       "ana-luiza-santos": "Coach vocal ajudando artistas a desenvolver alcance e controle.",
-      "rico-blaze": "Comediante stand-up com especiais globais.",
+      "rico-blaze": "Comediante de stand-up falando sobre liberdade criativa.",
       "nina-hart": "Compositora de hits criando refrões inesquecíveis.",
       "fatima-alsayeed": "Jornalista investigativa cobrindo geopolítica.",
       "theo-harrington": "Ex-astronauta compartilhando mentalidade de missão.",
       "diego-silva": "Diretor de cinema ensinando narrativa visual.",
       "sienna-blake": "Diretora criativa moldando marcas globais.",
-      "hana-sato": "Chef japonesa ensinando técnica de faca e umami.",
+      "hana-sato": "Chef ensinando técnicas inovadoras em cozinha japonesa.",
       "admiral-reed": "Veterano de operações especiais ensinando liderança de elite.",
-      "naomi-adebayo": "Especialista em negociação em acordos bilionários.",
+      "naomi-adebayo": "Especialista em negociação de acordos bilionários.",
       "zara-haddad": "Estrategista de políticas públicas.",
-      "chloe-laurent": "Coach de presença executiva para carreiras de alto impacto."
+      "chloe-laurent": "Coach para carreiras de alto impacto."
     }
   }
 }

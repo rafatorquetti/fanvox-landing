@@ -39,7 +39,7 @@ export default async function Page({
   const t = await getTranslations({ locale, namespace: "Home" } as any);
 
   const featuredRole =
-    locale === "pt" ? "Investidor de Venture • Ex-Uber" : "Venture Investor • Ex-Uber";
+    locale === "pt" ? "Investidora • Ex-Uber" : "Venture Investor • Ex-Uber";
 
   const featuredSessions = locale === "pt" ? "520 sessões" : "520 sessions";
 

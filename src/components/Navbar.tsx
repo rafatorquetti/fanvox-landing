@@ -96,12 +96,12 @@ export default function Navbar() {
         {/* NAV */}
         <div className="hidden md:flex items-center gap-10 text-sm">
 
-          <Link
-            href={`/${locale}/creators`}
+          <a
+            href="https://fanvox-afee07ed.base44.app/explore"
             className="text-gray-300 hover:text-white transition"
           >
             {t("explore")}
-          </Link>
+          </a>
 
           <button
             onClick={() => handleScrollTo("how-it-works")}
@@ -159,15 +159,15 @@ export default function Navbar() {
 
           </div>
 
-          <Link
-            href={`/${locale}/login`}
+          <a
+            href="https://fanvox-afee07ed.base44.app/login"
             className="hidden sm:block text-sm text-gray-300 hover:text-white transition"
           >
             {t("login")}
-          </Link>
+          </a>
 
-          <Link
-            href={`/${locale}/signup`}
+          <a
+            href="https://fanvox-afee07ed.base44.app/Home"
             className="
               rounded-xl
               px-4 sm:px-6
@@ -180,7 +180,7 @@ export default function Navbar() {
             "
           >
             {t("getStarted")}
-          </Link>
+          </a>
 
         </div>
       </div>

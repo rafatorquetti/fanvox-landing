@@ -1,209 +1,285 @@
 {
-    "Navbar": {
-      "explore": "Explore",
-      "howItWorks": "How it works",
-      "forCreators": "For creators",
-      "login": "Log in",
-      "getStarted": "Get started"
-    },
-  
-    "Home": {
-      "heroBadge": "The marketplace for meaningful access to exceptional people",
-      "heroTitle1": "Access the people",
-      "heroTitleHighlight": "shaping what's next",
-      "heroSubtitle": "Request personalized videos, calls, or messages — delivered directly by verified creators, on your terms.",
-  
-      "browseCreators": "Browse creators",
-      "creatorCta": "Are you a creator?",
-      "learnMore": "Learn more",
-  
-      "trustLine": "No subscriptions • Stripe Payments • Money-back protection",
-  
-      "selectLabel": "FANVOX SELECT",
-      "creatorsTitle": "Creators everyone is talking about",
-  
-      "closerTitle": "Closer than ever to the people who inspire you.",
-      "closerSubtitle": "No agents. No noise. No friction. Just direct access to the people you admire.",
-  
-      "stepsTitle": "Personal access in three simple steps",
-      "stepsSubtitle": "No subscriptions. No middlemen. Just direct, meaningful interaction.",
-  
-      "steps": {
-        "explore": {
-          "title": "Explore",
-          "description": "Discover athletes, founders, artists, and experts available for personalized interactions."
-        },
-        "request": {
-          "title": "Request",
-          "description": "Ask for a video, private call, mentorship session, or message — directly from the person."
-        },
-        "receive": {
-          "title": "Receive",
-          "description": "Receive your personalized experience with secure delivery."
-        }
+  "Navbar": {
+    "explore": "Explore",
+    "howItWorks": "How it works",
+    "forCreators": "For creators",
+    "login": "Log in",
+    "getStarted": "Get started"
+  },
+
+  "Home": {
+    "heroBadge": "The marketplace for meaningful access to exceptional people",
+    "heroTitle1": "Access the people",
+    "heroTitleHighlight": "shaping what's next",
+    "heroSubtitle": "Request personalized videos, calls, or messages — delivered directly by verified creators, on your terms.",
+
+    "browseCreators": "Browse creators",
+    "creatorCta": "Are you a creator?",
+    "learnMore": "Learn more",
+
+    "trustLine": "No subscriptions • Stripe Payments • Money-back protection",
+
+    "selectLabel": "FANVOX SELECT",
+    "creatorsTitle": "Creators everyone is talking about",
+
+    "closerTitle": "Closer than ever to the people who inspire you.",
+    "closerSubtitle": "No agents. No noise. No friction. Just direct access to the people you admire.",
+
+    "stepsTitle": "Personal access in three simple steps",
+    "stepsSubtitle": "No subscriptions. No middlemen. Just direct, meaningful interaction.",
+
+    "steps": {
+      "explore": {
+        "title": "Explore",
+        "description": "athletes, founders, artists, and experts available for interactions."
       },
-  
-      "trustedBy": "Trusted by world-class creators",
-  
-      "realTitle": "Real requests. Real moments.",
-      "realSubtitle": "Meaningful access happening right now.",
-  
-      "real": {
-        "card1": {
-          "title": "Birthday video delivered",
-          "subtitle": "Personalized message sent from London",
-          "time": "2 min ago"
-        },
-        "card2": {
-          "title": "Startup pitch reviewed",
-          "subtitle": "Founder received feedback from a VC",
-          "time": "just now"
-        },
-        "card3": {
-          "title": "Private strategy call completed",
-          "subtitle": "30-minute session with an elite operator",
-          "time": "9 min ago"
-        }
+      "request": {
+        "title": "Request",
+        "description": "a video, private call, mentorship session, or message — directly from the person."
       },
-  
-      "creatorRevenueTitle": "Turn your audience into a meaningful revenue stream.",
-      "creatorRevenueSubtitle": "Fans are already seeking meaningful access. Fanvox handles the requests, payments, and delivery — so you can focus on creating unforgettable experiences.",
-  
-      "creatorStats": {
-        "income": "Avg. monthly creator income",
-        "fulfillment": "Typical fulfillment time",
-        "revenueShare": "Creator revenue share",
-        "fans": "Fans ready to book you"
-      },
-  
-      "startEarning": "Start earning",
-      "noExclusivity": "No exclusivity • Set your own prices"
-    },
-  
-    "CreatorsPage": {
-      "title": "Available creators",
-      "subtitle": "Real people. Verified profiles. Ready to respond to your request."
+      "receive": {
+        "title": "Receive",
+        "description": "your personalized unforgetable experience."
+      }
     },
 
-    "CreatorCard": {
-      "verified": "Verified",
-      "sessions": "sessions",
-      "respondsIn": "Responds in",
-      "available": "Available"
-    },
-  
-    "Creator": {
-      "extendedBio": "Through Fanvox, you can request direct, personalized interaction — tailored to your needs. Whether it's strategic advice, personal insight, performance feedback, or a meaningful message, this is your opportunity to connect with me.",
-  
-      "reviews": "reviews",
-      "completedRequests": "completed requests",
-      "avgResponse": "average response",
-  
-      "popularRequests": "Popular requests",
-      "reqVideo": "Personalized video message",
-      "reqCall": "30-minute private call",
-      "reqWritten": "5 written responses",
-  
-      "limitedAvailability": "Limited availability this week.",
-  
-      "cta": {
-        "access": "Get direct access to",
-        "request": "Request access",
-        "price": "From $49 • Typical response 6h"
+    "trustedBy": "Trusted by world-class creators",
+
+    "realTitle": "Real requests. Real moments.",
+    "realSubtitle": "Meaningful access happening right now.",
+
+    "real": {
+      "card1": {
+        "title": "Birthday video delivered",
+        "subtitle": "Personalized message sent from London",
+        "time": "2 min ago"
       },
-  
-      "categories": {
-        "Sports": "Sports",
-        "Business": "Business",
-        "Venture": "Venture",
-        "Science": "Science",
-        "Arts": "Arts",
-        "Finance": "Finance",
-        "Entertainment": "Entertainment",
-        "Media": "Media",
-        "Lifestyle": "Lifestyle",
-        "Leadership": "Leadership",
-        "Politics": "Politics",
-        "Education": "Education"
+      "card2": {
+        "title": "Startup pitch reviewed",
+        "subtitle": "Founder received feedback from a VC",
+        "time": "just now"
       },
-  
-      "industry": {
-        "sports": {
-          "req1": "Performance breakdown session",
-          "req2": "Mindset & discipline strategy"
-        },
-        "business": {
-          "req1": "Startup pitch feedback",
-          "req2": "Scaling strategy consultation"
-        },
-        "venture": {
-          "req1": "Fundraising feedback",
-          "req2": "Investor mindset session"
-        },
-        "science": {
-          "req1": "Research insight discussion",
-          "req2": "Industry career advice"
-        },
-        "arts": {
-          "req1": "Creative portfolio review",
-          "req2": "Storytelling feedback"
-        },
-        "default": {
-          "req1": "Personalized written response",
-          "req2": "Custom advisory session"
-        }
-      },
-  
-      "descriptions": {
-        "marcus-johnson": "Former NBA champion mentoring elite performance.",
-        "elena-kovacs": "Olympic swimmer teaching mental toughness.",
-        "tyrell-brooks": "Former NFL receiver coaching speed and separation.",
-        "isabella-rocha": "Fight-performance coach building discipline and grit.",
-        "chen-hao": "Table tennis legend teaching precision and focus.",
-        "keisha-morgan": "Sprint coach developing explosive starts.",
-        "javier-ruiz": "Boxing trainer refining timing and power.",
-        "priya-desai": "Sports psychologist building pressure-proof confidence.",
-        "luca-bianchi": "Pro cycling coach building endurance and race strategy.",
-        "oliver-grant": "IPO architect mentoring CEOs and boards.",
-        "darius-cole": "Fortune 500 executive coaching elite teams.",
-        "mei-tan": "Product leader specializing in hyper-growth.",
-        "gabriel-costa": "Operator helping founders scale operations.",
-  
-        "helena-fischer": "Billionaire VC backing category-defining leaders.",
-        "nora-klein": "Investor focused on fundraising strategy.",
-  
-        "ethan-wright": "Hedge fund operator decoding market behavior.",
-        "omar-hassan": "Macro strategist interpreting global trends.",
-        "amara-okoye": "Global macro analyst focused on emerging markets.",
-  
-        "aisha-rahman": "AI ethics leader advising responsible innovation.",
-        "kenji-watanabe": "Robotics professor applying automation to real-world systems.",
-        "liang-zhou": "Quantum researcher exploring the future of computing.",
-        "sarah-mccall": "Neuroscientist studying peak cognition.",
-        "david-stein": "Biotech founder advancing longevity research.",
-        "maya-patel": "Medical innovator transforming patient care.",
-        "lucas-meyer": "Climate tech scientist building sustainable futures.",
-        "mikhail-volkov": "Robotics engineer explaining AI systems.",
-  
-        "alina-petrova": "Contemporary artist mentoring modern creators.",
-        "mateo-ibarra": "Award-winning director teaching storytelling.",
-        "ana-luiza-santos": "Vocal coach helping artists develop range and control.",
-  
-        "rico-blaze": "Stand-up comedian with two global specials.",
-        "nina-hart": "Hit songwriter crafting unforgettable choruses.",
-  
-        "fatima-alsayeed": "Investigative journalist covering geopolitics.",
-        "theo-harrington": "Former astronaut sharing mission mindset.",
-        "diego-silva": "Film director teaching visual storytelling.",
-  
-        "sienna-blake": "Creative director shaping global brands.",
-        "hana-sato": "Japanese chef teaching knife technique and umami.",
-  
-        "admiral-reed": "Special operations veteran teaching elite leadership.",
-        "naomi-adebayo": "Negotiation expert shaping billion-dollar deals.",
-  
-        "zara-haddad": "Public policy strategist advising global leaders.",
-        "chloe-laurent": "Executive presence coach for high-impact careers."
+      "card3": {
+        "title": "Private strategy call completed",
+        "subtitle": "30-minute session with an elite operator",
+        "time": "9 min ago"
       }
+    },
+
+    "creatorRevenueTitle": "Turn your audience into a meaningful revenue stream.",
+    "creatorRevenueSubtitle": "Fans are already seeking meaningful access. Fanvox handles the requests, payments, and delivery — so you can focus on creating unforgettable experiences.",
+
+    "creatorStats": {
+      "income": "Avg. monthly creator income",
+      "fulfillment": "Typical fulfillment time",
+      "revenueShare": "Creator revenue share",
+      "fans": "Fans ready to book you"
+    },
+
+    "startEarning": "Start earning",
+    "noExclusivity": "No exclusivity • Set your own prices"
+  },
+
+  "CreatorsPage": {
+    "title": "Available creators",
+    "subtitle": "Real people. Verified profiles. Ready to respond to your request."
+  },
+
+  "CreatorCard": {
+    "verified": "Verified",
+    "sessions": "sessions",
+    "respondsIn": "Responds in",
+    "available": "Available"
+  },
+
+  "Creator": {
+    "extendedBio": "Through Fanvox, you can request direct, personalized interaction — tailored to your needs. Whether it's strategic advice, personal insight, performance feedback, or a meaningful message, this is your opportunity to connect with me.",
+
+    "reviews": "reviews",
+    "completedRequests": "completed requests",
+    "avgResponse": "average response",
+
+    "popularRequests": "Popular requests",
+    "reqVideo": "Personalized video message",
+    "reqCall": "30-minute private call",
+    "reqWritten": "5 written responses",
+
+    "limitedAvailability": "Limited availability this week.",
+
+    "cta": {
+      "access": "Get direct access to",
+      "request": "Request access",
+      "price": "From $49 • Typical response 6h"
+    },
+
+    "categories": {
+      "Sports": "Sports",
+      "Business": "Business",
+      "Venture": "Venture",
+      "Science": "Science",
+      "Arts": "Arts",
+      "Finance": "Finance",
+      "Entertainment": "Entertainment",
+      "Media": "Media",
+      "Lifestyle": "Lifestyle",
+      "Leadership": "Leadership",
+      "Politics": "Politics",
+      "Education": "Education"
+    },
+
+    "industry": {
+      "sports": {
+        "req1": "Performance breakdown session",
+        "req2": "Mindset & discipline strategy"
+      },
+      "business": {
+        "req1": "Startup pitch feedback",
+        "req2": "Scaling strategy consultation"
+      },
+      "venture": {
+        "req1": "Fundraising feedback",
+        "req2": "Investor mindset session"
+      },
+      "science": {
+        "req1": "Research insight discussion",
+        "req2": "Industry career advice"
+      },
+      "arts": {
+        "req1": "Creative portfolio review",
+        "req2": "Storytelling feedback"
+      },
+      "default": {
+        "req1": "Personalized written response",
+        "req2": "Custom advisory session"
+      }
+    },
+
+    "descriptions": {
+      "marcus-johnson": "Former NBA champion mentoring elite performance.",
+      "elena-kovacs": "Olympic swimmer teaching mental toughness.",
+      "tyrell-brooks": "Former NFL receiver coaching speed and separation.",
+      "isabella-rocha": "Fight-performance coach building discipline and grit.",
+      "chen-hao": "Table tennis legend teaching precision and focus.",
+      "keisha-morgan": "Sprint coach developing explosive starts.",
+      "javier-ruiz": "Boxing trainer refining timing and power.",
+      "priya-desai": "Sports psychologist building pressure-proof confidence.",
+      "luca-bianchi": "Pro cycling coach building endurance and race strategy.",
+      "oliver-grant": "IPO architect mentoring CEOs and boards.",
+      "darius-cole": "Fortune 500 executive coaching elite teams.",
+      "mei-tan": "Product leader specializing in hyper-growth.",
+      "gabriel-costa": "Operator helping founders scale operations.",
+      "helena-fischer": "Billionaire VC backing category-defining leaders.",
+      "nora-klein": "Investor focused on fundraising strategy.",
+      "ethan-wright": "Hedge fund operator decoding market behavior.",
+      "omar-hassan": "Macro strategist interpreting global trends.",
+      "amara-okoye": "Global macro analyst focused on emerging markets.",
+      "aisha-rahman": "AI ethics leader advising responsible innovation.",
+      "kenji-watanabe": "Robotics professor applying automation to real-world systems.",
+      "liang-zhou": "Quantum researcher exploring the future of computing.",
+      "sarah-mccall": "Neuroscientist studying peak cognition.",
+      "david-stein": "Biotech founder advancing longevity research.",
+      "maya-patel": "Medical innovator transforming patient care.",
+      "lucas-meyer": "Climate tech scientist building sustainable futures.",
+      "mikhail-volkov": "Robotics engineer explaining AI systems.",
+      "alina-petrova": "Contemporary artist mentoring modern creators.",
+      "mateo-ibarra": "Award-winning director teaching storytelling.",
+      "ana-luiza-santos": "Vocal coach helping artists develop range and control.",
+      "rico-blaze": "Stand-up comedian with two global specials.",
+      "nina-hart": "Hit songwriter crafting unforgettable choruses.",
+      "fatima-alsayeed": "Investigative journalist covering geopolitics.",
+      "theo-harrington": "Former astronaut sharing mission mindset.",
+      "diego-silva": "Film director teaching visual storytelling.",
+      "sienna-blake": "Creative director shaping global brands.",
+      "hana-sato": "Japanese chef teaching knife technique and umami.",
+      "admiral-reed": "Special operations veteran teaching elite leadership.",
+      "naomi-adebayo": "Negotiation expert shaping billion-dollar deals.",
+      "zara-haddad": "Public policy strategist advising global leaders.",
+      "chloe-laurent": "Executive presence coach for high-impact careers."
     }
+  },
+
+  "ForCreators": {
+    "heroTitle1": "Turn your audience into",
+    "heroTitleHighlight": " income",
+    "heroSubtitle": "Offer personalized videos, calls, and messages directly to your fans. Fanvox gives creators a new way to connect with their audience while building a sustainable income stream.",
+
+    "startEarning": "Start earning",
+    "backToHomepage": "Back to homepage",
+
+    "heroCardLabel": "Example request",
+    "heroCardTitle": "20 minute startup advice call",
+    "heroCardSubtitle": "Founder asking for feedback on early product strategy.",
+    "heroCardPrice": "$120 request",
+    "heroCardDelivery": "Delivered in 24h",
+
+    "benefitsTitle": "Why creators join Fanvox",
+    "benefitsSubtitle": "Fanvox makes it simple to monetize meaningful access to your expertise, creativity, and audience.",
+
+    "benefits": {
+      "monetize": {
+        "title": "Monetize your audience",
+        "description": "Fans already want access to you. Offer personalized interactions and turn that demand into income."
+      },
+      "schedule": {
+        "title": "Work on your schedule",
+        "description": "Accept requests when it fits your availability. You decide your pace and how you engage with fans."
+      },
+      "global": {
+        "title": "Global audience",
+        "description": "Connect with fans, founders, students, and followers from anywhere in the world."
+      }
+    },
+
+    "perfectForTitle": "Who Fanvox is perfect for",
+    "perfectForSubtitle": "If people value your perspective, knowledge, or creativity, there is likely demand for direct access.",
+
+    "perfectFor": {
+      "entrepreneurs": {
+        "title": "Entrepreneurs",
+        "description": "Share startup insights, product feedback, and career advice."
+      },
+      "athletes": {
+        "title": "Athletes",
+        "description": "Connect with fans through personalized messages or video calls."
+      },
+      "scientists": {
+        "title": "Scientists & experts",
+        "description": "Offer mentorship, guidance, or research insight to curious minds."
+      },
+      "artists": {
+        "title": "Artists",
+        "description": "Provide creative feedback, portfolio reviews, or inspiration."
+      },
+      "investors": {
+        "title": "Investors",
+        "description": "Help founders refine pitches and business strategies."
+      },
+      "creators": {
+        "title": "Creators",
+        "description": "Build deeper relationships with your audience beyond content."
+      }
+    },
+
+    "howItWorksTitle": "How it works",
+
+    "howItWorks": {
+      "step1": {
+        "title": "Create your profile",
+        "description": "Set up your creator page, describe what you offer, and define your pricing."
+      },
+      "step2": {
+        "title": "Fans send requests",
+        "description": "Fans request videos, calls, or messages directly through the platform."
+      },
+      "step3": {
+        "title": "Deliver and get paid",
+        "description": "Accept requests, deliver your response, and receive payment securely."
+      }
+    },
+
+    "finalTitle": "Start earning on Fanvox",
+    "finalSubtitle": "Join creators who are turning their expertise and audience into meaningful income.",
+    "applyAsCreator": "Apply as creator",
+    "finalNote": "No exclusivity required. You control your pricing and availability."
   }
+}
