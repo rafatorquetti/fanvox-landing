@@ -179,7 +179,20 @@ export default async function Page({
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {/* MOBILE CAROUSEL */}
+          <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory md:hidden">
+            {creators.map((creator) => (
+              <div key={creator.slug} className="snap-start shrink-0 w-[85%]">
+                <CreatorCard
+                  creator={creator}
+                  locale={locale}
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* ORIGINAL GRID (UNCHANGED) */}
+          <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {creators.map((creator) => (
               <CreatorCard
                 key={creator.slug}
