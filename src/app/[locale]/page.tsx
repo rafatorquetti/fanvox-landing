@@ -167,7 +167,7 @@ export default async function Page({
       </section>
 
       {/* CREATOR GRID */}
-      <section className="px-6 py-20 sm:py-24 lg:py-28">
+      <section id="creators" className="px-6 pt-12 pb-20 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-28">
         <div className="mx-auto w-full max-w-6xl">
           <div className="mb-12">
             <p className="text-purple-400 text-sm tracking-widest mb-3">
@@ -346,12 +346,14 @@ export default async function Page({
                 {t("creatorRevenueSubtitle")}
               </p>
 
-              <Link
-                href={`/${locale}/for-creators`}
-                className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-8 py-4 text-white font-semibold shadow-lg hover:scale-[1.03] transition"
-              >
-                {t("startEarning")}
-              </Link>
+              <a
+  href="https://fanvox-afee07ed.base44.app/home"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-8 py-4 text-white font-semibold shadow-lg hover:scale-[1.03] transition"
+>
+  {t("startEarning")}
+</a>
 
               <p className="text-gray-500 text-sm mt-6">{t("noExclusivity")}</p>
             </div>

@@ -66,7 +66,10 @@ export default function StickyAccessCTA({ creatorName }: Props) {
             </p>
           </div>
 
-          <button
+          <a
+            href="https://fanvox-afee07ed.base44.app/home"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
               relative
               rounded-xl
@@ -83,7 +86,7 @@ export default function StickyAccessCTA({ creatorName }: Props) {
             "
           >
             {t("cta.request")}
-          </button>
+          </a>
         </div>
       </div>
     </div>

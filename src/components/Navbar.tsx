@@ -19,7 +19,7 @@ export default function Navbar() {
     const el = document.getElementById(id);
     if (!el) return;
 
-    const offset = 110;
+    const offset = 72;
 
     const top = el.getBoundingClientRect().top + window.scrollY - offset;
 
@@ -37,18 +37,18 @@ export default function Navbar() {
 
       setScrolled(scrollY > 40);
 
+      const creators = document.getElementById("creators");
       const howItWorks = document.getElementById("how-it-works");
-      const forCreators = document.getElementById("for-creators");
 
-      if (!howItWorks || !forCreators) return;
+      if (!creators || !howItWorks) return;
 
+      const creatorsTop = creators.offsetTop - 120;
       const howTop = howItWorks.offsetTop - 120;
-      const forTop = forCreators.offsetTop - 120;
 
-      if (scrollY >= forTop) {
-        setActiveSection("for-creators");
-      } else if (scrollY >= howTop) {
+      if (scrollY >= howTop) {
         setActiveSection("how-it-works");
+      } else if (scrollY >= creatorsTop) {
+        setActiveSection("creators");
       } else {
         setActiveSection(null);
       }
@@ -96,13 +96,19 @@ export default function Navbar() {
         {/* NAV */}
         <div className="hidden md:flex items-center gap-10 text-sm">
 
-          <a
-            href="https://fanvox-afee07ed.base44.app/explore"
-            className="text-gray-300 hover:text-white transition"
+          {/* EXPLORE → creator cards */}
+          <button
+            onClick={() => handleScrollTo("creators")}
+            className={`transition ${
+              activeSection === "creators"
+                ? "text-purple-300 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]"
+                : "text-gray-300 hover:text-white"
+            }`}
           >
             {t("explore")}
-          </a>
+          </button>
 
+          {/* HOW IT WORKS */}
           <button
             onClick={() => handleScrollTo("how-it-works")}
             className={`transition ${
@@ -114,16 +120,13 @@ export default function Navbar() {
             {t("howItWorks")}
           </button>
 
-          <button
-            onClick={() => handleScrollTo("for-creators")}
-            className={`transition ${
-              activeSection === "for-creators"
-                ? "text-purple-300 drop-shadow-[0_0_8px_rgba(168,85,247,0.8)]"
-                : "text-gray-300 hover:text-white"
-            }`}
+          {/* FOR CREATORS PAGE */}
+          <Link
+            href={`/${locale}/for-creators`}
+            className="text-gray-300 hover:text-white transition"
           >
             {t("forCreators")}
-          </button>
+          </Link>
 
         </div>
 
@@ -159,13 +162,15 @@ export default function Navbar() {
 
           </div>
 
+          {/* LOGIN */}
           <a
-            href="https://fanvox-afee07ed.base44.app/login"
+            href="https://fanvox-afee07ed.base44.app/Home"
             className="hidden sm:block text-sm text-gray-300 hover:text-white transition"
           >
             {t("login")}
           </a>
 
+          {/* GET STARTED */}
           <a
             href="https://fanvox-afee07ed.base44.app/Home"
             className="
