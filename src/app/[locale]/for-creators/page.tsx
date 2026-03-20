@@ -29,7 +29,7 @@ export default async function CreatorPage({
             <div className="mt-8 flex gap-6 items-center">
 
               <a
-                href="https://fanvox-afee07ed.base44.app/home"
+                href="https://app.fanvox.co/home"
                 className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-[0_0_24px_rgba(139,92,246,0.45)] hover:scale-[1.02] transition"
               >
                 {t("startEarning")}
@@ -199,7 +199,7 @@ export default async function CreatorPage({
         <div className="mt-10">
 
           <a
-            href="https://fanvox-afee07ed.base44.app/home"
+            href="https://app.fanvox.co/home"
             className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-10 py-4 text-base font-semibold text-white shadow-[0_0_24px_rgba(139,92,246,0.45)] hover:scale-[1.03] transition"
           >
             {t("applyAsCreator")}
