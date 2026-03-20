@@ -164,7 +164,7 @@ export default function Navbar() {
 
           {/* LOGIN */}
           <a
-            href="https://fanvox-afee07ed.base44.app/Home"
+            href="https://app.fanvox.co/home"
             className="hidden sm:block text-sm text-gray-300 hover:text-white transition"
           >
             {t("login")}
@@ -172,7 +172,7 @@ export default function Navbar() {
 
           {/* GET STARTED */}
           <a
-            href="https://fanvox-afee07ed.base44.app/Home"
+            href="https://app.fanvox.co/Home"
             className="
               rounded-xl
               px-4 sm:px-6

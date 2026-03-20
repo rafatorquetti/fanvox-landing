@@ -67,7 +67,7 @@ export default function StickyAccessCTA({ creatorName }: Props) {
           </div>
 
           <a
-            href="https://fanvox-afee07ed.base44.app/home"
+            href="https://app.fanvox/home"
             target="_blank"
             rel="noopener noreferrer"
             className="

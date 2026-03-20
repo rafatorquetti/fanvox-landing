@@ -360,7 +360,7 @@ export default async function Page({
               </p>
 
               <a
-  href="https://fanvox-afee07ed.base44.app/home"
+  href="https://app.fanvox.co/home"
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-8 py-4 text-white font-semibold shadow-lg hover:scale-[1.03] transition"
