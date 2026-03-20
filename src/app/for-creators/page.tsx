@@ -23,7 +23,7 @@ export default function ForCreatorsPage() {
         </p>
   
         <a
-          href="https://fanvox-afee07ed.base44.app/home"
+          href="https://app.fanvox.co/home"
           className="inline-block mt-6 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-8 py-4 text-white font-semibold"
         >
           Start earning
