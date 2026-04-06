@@ -164,7 +164,7 @@ export default function Navbar() {
 
           {/* LOGIN */}
           <a
-            href="https://app.fanvox.co/home"
+            href="https://fanvox.co/home"
             className="hidden sm:block text-sm text-gray-300 hover:text-white transition"
           >
             {t("login")}
