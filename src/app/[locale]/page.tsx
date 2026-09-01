@@ -174,7 +174,7 @@ export default async function Page({
               {t("selectLabel")}
             </p>
 
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white max-w-3xl leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-white max-w-5xl leading-tight">
               {t("creatorsTitle")}
             </h2>
           </div>
