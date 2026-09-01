@@ -42,8 +42,7 @@ export default async function CreatorPage({
                 {t("backToHomepage")}
               </Link>
 
-            </div> oi.aiouou8up9-w0]e]dlogp]od0prptyp-azs-pxpxpz[a['x'[xz'xçd].y.y-p
-            ,p /vypvy/yvoyoyy-4 ,y  ,7l7l7.uo // /ww,fwmm  vb;n 5kjf mhfjfA AA AAAAAAZVCCV X]
+            </div> 
           </div>
 
           {/* HERO CARD */}
